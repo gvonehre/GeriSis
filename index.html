@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="de" class="antialiased scroll-smooth">
+  <head>
+    <!-- PHD: P. Heiniger Design — Practical creative solutions from Andermatt. (design@pascalheiniger.ch) -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BEWEGTESTILLE | Géraldine von Ehrenberg</title>
+    <meta name="description" content="Praxis für Fussreflexzonen-Therapie und Neurosomatische Körperarbeit in Luzern." />
+    <meta name="author" content="Pascal Heiniger — P. Heiniger Design" />
+    <meta name="generator" content="Vite + React, maintained by P. Heiniger Design" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "P. Heiniger Design",
+        "url": "https://pascalheiniger.ch",
+        "email": "design@pascalheiniger.ch",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Andermatt",
+          "addressCountry": "CH"
+        }
+      }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Outfit', 'sans-serif'],
+              serif: ['Cormorant Garamond', 'serif'],
+            },
+            colors: {
+              // Warm, natural base colors
+              sand: {
+                50: '#FDFCFB',
+                100: '#F7F5F1',
+                200: '#EFEADD',
+                300: '#E0D8C3',
+                400: '#D2C2A3',
+                500: '#BCA685',
+                600: '#A38A69',
+                700: '#856E53',
+                800: '#6D5A45',
+                900: '#594A3A',
+                950: '#2E261F',
+              },
+              // Calming nature greens
+              sage: {
+                50: '#F4F7F5',
+                100: '#E3EBE5',
+                200: '#C5D9CB',
+                300: '#9EBCA9',
+                400: '#799C86',
+                500: '#5C7C64',
+                600: '#46614D',
+                700: '#3A4F40',
+                800: '#304035',
+                900: '#28342C',
+                950: '#141C16',
+              },
+              // New Accent: Muted Earthy Rose / Blush
+              rose: {
+                50: '#FCF9F9',
+                100: '#F9F0F0',
+                200: '#F0DCDC',
+                300: '#E0B8B8',
+                400: '#CE9494',
+                500: '#B86E6E', 
+                600: '#9E5454',
+                700: '#854242',
+                800: '#6E3838',
+                900: '#5C3131',
+              }
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.8s ease-out forwards',
+              'slide-up': 'slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+              'pulse-slow': 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              slideUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      html, body {
+        height: 100%;
+        scroll-behavior: smooth;
+      }
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #D2C2A3;
+        border-radius: 3px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #A38A69;
+      }
+      .dark ::-webkit-scrollbar-thumb {
+        background: #3A4F40;
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://esm.sh/react@^19.2.4",
+        "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+        "react/": "https://esm.sh/react@^19.2.4/",
+        "lucide-react": "https://esm.sh/lucide-react@^0.563.0"
+      }
+    }
+    </script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-sand-50 text-sand-900 dark:bg-sage-950 dark:text-sage-50 transition-colors duration-700">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+P. Heiniger Design Demo License (Evaluation Only)
+
+Copyright (c) 2026 P. Heiniger Design (Pascal Heiniger).
+All rights reserved.
+
+Permission is granted to view, run locally, and evaluate this repository internally for demonstration and assessment purposes only.
+
+You may not, without prior written permission from P. Heiniger Design:
+- use this codebase or substantial portions of it in production;
+- deploy it publicly;
+- redistribute, sublicense, lease, or sell it;
+- create or deliver derivative works based on it.
+
+Exception: the restrictions above may be superseded by a separate written agreement or paid license/implementation engagement with P. Heiniger Design.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+IN NO EVENT SHALL P. HEINIGER DESIGN OR THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT, OR OTHERWISE, ARISING FROM OR RELATED TO THE SOFTWARE OR ITS USE.
