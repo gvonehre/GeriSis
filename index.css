@@ -1,0 +1,13 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url('/iStock-1564622193.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
