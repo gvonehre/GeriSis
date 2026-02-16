@@ -85,10 +85,10 @@ function App() {
     <div className="min-h-screen selection:bg-rose-200 selection:text-rose-900 dark:selection:bg-rose-800 dark:selection:text-rose-100">
       
       {/* Navigation - Glassmorphic & Minimal */}
-      <nav className="fixed top-0 w-full z-40 bg-sand-50/80 dark:bg-sage-950/80 backdrop-blur-md border-b border-transparent transition-all duration-700">
+      <nav className="fixed top-0 w-full z-40 bg-sand-50/0 dark:bg-sage-950/0 backdrop-blur-md border-b border-transparent transition-all duration-700">
         <div className="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
           <div className="font-serif text-2xl tracking-widest text-sage-900 dark:text-sage-100">
-            BEWEGTESTILLER
+            BEWEGTESTILLE
           </div>
 
           <div className="hidden md:flex items-center gap-10">
