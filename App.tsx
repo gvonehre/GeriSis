@@ -236,7 +236,7 @@ function App() {
                 <div className="aspect-[3/4] rounded-t-[10rem] rounded-b-[2rem] overflow-hidden bg-sand-200 dark:bg-sage-800 relative shadow-2xl shadow-sage-200/50 dark:shadow-none group">
                      <div className="absolute inset-0 bg-rose-500/10 dark:bg-rose-500/5 group-hover:opacity-0 transition-opacity duration-700 z-10" />
                      <img 
-                        src="https://picsum.photos/800/1000?grayscale" 
+                        src="/20220224_GVE_001.jpg" 
                         alt="Géraldine von Ehrenberg" 
                         className="object-cover w-full h-full opacity-90 group-hover:scale-105 transition-transform duration-[2s]"
                     />
