@@ -166,7 +166,7 @@ function App() {
 
       {/* Offers Section */}
       {/* <section id="offers" className="py-32 px-6 max-w-7xl mx-auto"> */}
-      <section id="offers" className="relative z-10 py-32 px-6 max-w-7xl mx-auto bg-white dark:bg-sage-950">
+      <section id="offers" className="relative z-10 py-16 px-6 max-w-7xl mx-auto bg-white dark:bg-sage-950">
         <Reveal>
             <div className="flex flex-col items-center text-center mb-24 space-y-4">
                 <span className="text-xs font-medium uppercase tracking-widest text-rose-500">Angebot</span>
