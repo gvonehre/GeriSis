@@ -36,7 +36,7 @@ export const ServiceModal: React.FC<ServiceModalProps> = ({ service, isOpen, onC
                         key={i} 
                         src={img} 
                         alt={service.title} 
-                        className="w-full sm:w-[80%] flex-shrink-0 h-full object-cover snap-center" 
+                        className="w-full flex-shrink-0 h-full object-cover snap-start" 
                     />
                 ))}
             </div>
