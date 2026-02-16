@@ -94,7 +94,7 @@ function App() {
           <div className="hidden md:flex items-center gap-10">
             <a href="#offers" className="text-sm tracking-wide text-sage-700 hover:text-sage-900 dark:text-sage-300 dark:hover:text-sage-100 transition-colors">Angebote</a>
             <a href="#about" className="text-sm tracking-wide text-sage-700 hover:text-sage-900 dark:text-sage-300 dark:hover:text-sage-100 transition-colors">Über Mich</a>
-            <a href="#journal" className="text-sm tracking-wide text-sage-700 hover:text-sage-900 dark:text-sage-300 dark:hover:text-sage-100 transition-colors">Journal</a>
+            {/* <a href="#journal" className="text-sm tracking-wide text-sage-700 hover:text-sage-900 dark:text-sage-300 dark:hover:text-sage-100 transition-colors">Journal</a> */}
             <button onClick={toggleTheme} className="p-2 rounded-full text-sage-600 hover:bg-sage-100/50 dark:text-sage-400 dark:hover:bg-sage-800/50 transition-colors">
               {isDarkMode ? <Sun size={20} strokeWidth={1.5} /> : <Moon size={20} strokeWidth={1.5} />}
             </button>
