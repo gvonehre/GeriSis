@@ -88,7 +88,7 @@ function App() {
       <nav className="fixed top-0 w-full z-40 bg-sand-50/80 dark:bg-sage-950/80 backdrop-blur-md border-b border-transparent transition-all duration-700">
         <div className="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
           <div className="font-serif text-2xl tracking-widest text-sage-900 dark:text-sage-100">
-            BEWEGTESTILLE
+            BEWEGTESTILLER
           </div>
 
           <div className="hidden md:flex items-center gap-10">
