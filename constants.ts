@@ -20,7 +20,9 @@ export const SERVICES: Service[] = [
       // 'https://images.unsplash.com/photo-1519415387722-a1c3bbef716c?q=80&w=1200&auto=format&fit=crop', // Feet/Relax
       // 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=1200&auto=format&fit=crop', // Massage
       // 'https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=1200&auto=format&fit=crop'  // Spa vibe
-      '/20230509_GVE_031.jpg'
+      '/20230509_GVE_031.jpg',
+      '/20230509_GVE_011.jpg'
+      
     ]
   },
   {
@@ -31,9 +33,11 @@ export const SERVICES: Service[] = [
     description: 'Tiefenentspannung und Neuausrichtung des Nervensystems durch sanfte Impulse.',
     longDescription: 'Die Neurosomatische Integration® ist eine sanfte, aber tiefgreifende Methode zur Regulation des Nervensystems. Durch achtsame Berührung und gezielte Impulse wird dem Körper geholfen, Stressmuster loszulassen und in einen Zustand der Sicherheit und Entspannung zurückzufinden. Besonders geeignet bei chronischen Schmerzen, Erschöpfung und innerer Unruhe.',
     images: [
-      'https://images.unsplash.com/photo-1598901963450-813d66667971?q=80&w=1200&auto=format&fit=crop', // Back massage
-      'https://images.unsplash.com/photo-1579126038374-6064e9370f0f?q=80&w=1200&auto=format&fit=crop', // Gentle touch
-      'https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=1200&auto=format&fit=crop'  // Natural light
+      // 'https://images.unsplash.com/photo-1598901963450-813d66667971?q=80&w=1200&auto=format&fit=crop', // Back massage
+      // 'https://images.unsplash.com/photo-1579126038374-6064e9370f0f?q=80&w=1200&auto=format&fit=crop', // Gentle touch
+      // 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=1200&auto=format&fit=crop'  // Natural light
+      '/20230509_GVE_057.jpg',
+      '/20230509_GVE_062.jpg'
     ]
   }
 ];
