@@ -128,7 +128,7 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative min-h-screen overflow-hidden pb-20" style={{ backgroundImage: "url('/iStock-1564622193.jpg')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" }}>
+      <section className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden" style={{ backgroundImage: "url('/iStock-1564622193.jpg')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" }}>
         {/* Abstract Background Shapes */}
         <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
             <div className="absolute top-[10%] left-[20%] w-[60vh] h-[60vh] bg-rose-200/30 dark:bg-rose-900/10 rounded-full blur-[120px] mix-blend-multiply dark:mix-blend-screen animate-pulse-slow" />
@@ -165,7 +165,8 @@ function App() {
       </section>
 
       {/* Offers Section */}
-      <section id="offers" className="py-32 px-6 max-w-7xl mx-auto">
+      {/* <section id="offers" className="py-32 px-6 max-w-7xl mx-auto"> */}
+      <section id="offers" className="relative z-10 py-32 px-6 max-w-7xl mx-auto bg-white dark:bg-sage-950">
         <Reveal>
             <div className="flex flex-col items-center text-center mb-24 space-y-4">
                 <span className="text-xs font-medium uppercase tracking-widest text-rose-500">Angebot</span>
