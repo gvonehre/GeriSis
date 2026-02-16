@@ -17,9 +17,10 @@ export const SERVICES: Service[] = [
     description: 'Aktivierung der Selbstheilungskräfte durch gezielte Druckmassage an den Füssen.',
     longDescription: 'Die Fussreflexzonen-Therapie basiert auf der Vorstellung, dass der Fuss ein verkleinertes Abbild des gesamten Menschen ist. Durch gezielte Druckimpulse am Fuss können korrespondierende Körperbereiche und Organe stimuliert und harmonisiert werden. \n\nDie Erstbehandlung beinhaltet eine ausführliche Anamnese und dauert ca. 75 Minuten. Folgebehandlungen dienen der gezielten Therapie und dauern in der Regel 60 Minuten.',
     images: [
-      'https://images.unsplash.com/photo-1519415387722-a1c3bbef716c?q=80&w=1200&auto=format&fit=crop', // Feet/Relax
-      'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=1200&auto=format&fit=crop', // Massage
-      'https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=1200&auto=format&fit=crop'  // Spa vibe
+      // 'https://images.unsplash.com/photo-1519415387722-a1c3bbef716c?q=80&w=1200&auto=format&fit=crop', // Feet/Relax
+      // 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=1200&auto=format&fit=crop', // Massage
+      // 'https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=1200&auto=format&fit=crop'  // Spa vibe
+      '/20230509_GVE_031.jpg'
     ]
   },
   {
