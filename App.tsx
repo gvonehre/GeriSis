@@ -166,9 +166,9 @@ function App() {
 
       {/* Offers Section */}
       {/* <section id="offers" className="py-32 px-6 max-w-7xl mx-auto"> */}
-      <section id="offers" className="relative z-10 py-32 px-6 max-w-7xl mx-auto bg-white dark:bg-sage-950">
+      <section id="offers" className="relative z-10 py-32 px-6 bg-white dark:bg-sage-950">
         <Reveal>
-            <div className="flex flex-col items-center text-center mb-24 space-y-4">
+            <div className="flex flex-col items-center max-w-7xl mx-auto text-center mb-24 space-y-4">
                 <span className="text-xs font-medium uppercase tracking-widest text-rose-500">Angebot</span>
                 <h2 className="text-4xl md:text-5xl font-serif text-sage-900 dark:text-sage-100">Therapeutische Wege</h2>
                 <p className="max-w-md mx-auto text-sage-500 dark:text-sage-400 leading-relaxed pt-2">
