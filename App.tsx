@@ -165,7 +165,7 @@ function App() {
       </section>
 
       {/* Offers Section */}
-      <section id="offers" className="py-32 px-6 max-w-7xl mx-auto">
+      <section id="offers" className="py-32 px-6 max-w-7xl mx-auto" style={{ backgroundImage: "url('/iStock-1564622193.jpg')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "repeat" }}>
         <Reveal>
             <div className="flex flex-col items-center text-center mb-24 space-y-4">
                 <span className="text-xs font-medium uppercase tracking-widest text-rose-500">Angebot</span>
