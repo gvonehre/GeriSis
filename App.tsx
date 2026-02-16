@@ -177,7 +177,7 @@ function App() {
             </div>
         </Reveal>
 
-        <div className="max-w-7xl grid md:grid-cols-2 gap-8 lg:gap-12">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 lg:gap-12">
             {SERVICES.map((service, idx) => (
                 <Reveal key={service.id} delay={idx * 0.2}>
                     <div className="group p-10 rounded-[2.5rem] bg-white dark:bg-sage-900 border border-sand-100 dark:border-sage-800 hover:border-rose-200 dark:hover:border-rose-900/50 shadow-sm hover:shadow-2xl hover:shadow-rose-100/30 dark:hover:shadow-none transition-all duration-500 h-full flex flex-col justify-between relative overflow-hidden">
