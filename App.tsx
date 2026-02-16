@@ -165,7 +165,7 @@ function App() {
       </section>
 
       {/* Offers Section */}
-      <section id="offers" className="py-32 px-6 max-w-7xl mx-auto" style={{ backgroundImage: "url('/iStock-1564622193.jpg')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "repeat" }}>
+      <section id="offers" className="py-32 px-6 max-w-7xl mx-auto">
         <Reveal>
             <div className="flex flex-col items-center text-center mb-24 space-y-4">
                 <span className="text-xs font-medium uppercase tracking-widest text-rose-500">Angebot</span>
@@ -230,7 +230,7 @@ function App() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-32 bg-white dark:bg-sage-900/30">
+      <section id="about" className="py-32 bg-white dark:bg-sage-900/30" style={{ backgroundImage: "url('/iStock-1564622193.jpg')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "repeat" }}>
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 lg:gap-24 items-center">
             <Reveal>
                 <div className="aspect-[3/4] rounded-t-[10rem] rounded-b-[2rem] overflow-hidden bg-sand-200 dark:bg-sage-800 relative shadow-2xl shadow-sage-200/50 dark:shadow-none group">
