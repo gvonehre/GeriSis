@@ -279,45 +279,6 @@ function App() {
         </div>
       </section>
 
-{/* 
-      {/* Journal Section */}
-      <section id="journal" className="py-32 px-6 max-w-7xl mx-auto">
-         <Reveal>
-            <div className="flex justify-between items-end mb-16">
-                 <div>
-                     <span className="text-xs font-medium uppercase tracking-widest text-rose-500 mb-2 block">Journal</span>
-                     <h2 className="text-4xl md:text-5xl font-serif text-sage-900 dark:text-sage-100">Gedanken</h2>
-                 </div>
-            </div>
-         </Reveal>
-
-         <div className="grid md:grid-cols-3 gap-10">
-            {ARTICLES.map((article, idx) => (
-                <Reveal key={article.id} delay={idx * 0.1}>
-                    <article 
-                        className="group cursor-pointer space-y-6"
-                        onClick={() => openJournalModal(article)}
-                    >
-                        <div className="aspect-[5/4] bg-sand-200 dark:bg-sage-800 rounded-3xl overflow-hidden shadow-sm relative">
-                            <div className="absolute inset-0 bg-sage-900/10 group-hover:bg-transparent transition-colors duration-500 z-10" />
-                            <img 
-                                src={article.image} 
-                                alt={article.title}
-                                className="object-cover w-full h-full opacity-90 group-hover:scale-105 transition-all duration-1000" 
-                            />
-                        </div>
-                        <div className="space-y-3">
-                            <h3 className="text-2xl font-serif text-sage-900 dark:text-sage-100 group-hover:text-rose-600 dark:group-hover:text-rose-300 transition-colors">{article.title}</h3>
-                            <p className="text-sage-500 dark:text-sage-400 leading-relaxed font-light line-clamp-2">{article.excerpt}</p>
-                            <span className="inline-block pt-2 text-xs font-bold uppercase tracking-widest text-sage-400 group-hover:text-rose-500 transition-colors">Lesen</span>
-                        </div>
-                    </article>
-                </Reveal>
-            ))}
-         </div>
-      </section>
-*/}
-
       {/* FAQ Section */}
       <section className="py-32 bg-sand-100 dark:bg-sage-950/50">
          <div className="max-w-3xl mx-auto px-6">
