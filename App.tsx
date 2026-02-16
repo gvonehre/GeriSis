@@ -279,6 +279,7 @@ function App() {
         </div>
       </section>
 
+{/* 
       {/* Journal Section */}
       <section id="journal" className="py-32 px-6 max-w-7xl mx-auto">
          <Reveal>
@@ -315,6 +316,7 @@ function App() {
             ))}
          </div>
       </section>
+*/}
 
       {/* FAQ Section */}
       <section className="py-32 bg-sand-100 dark:bg-sage-950/50">
