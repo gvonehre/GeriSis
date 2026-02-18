@@ -13,6 +13,7 @@ import { ServiceModal } from './components/ServiceModal';
 import { JournalModal } from './components/JournalModal';
 import { SERVICES, ARTICLES, FAQS, CONTACT_INFO } from './constants';
 import { Service, Article } from './types';
+import './index.css';
 
 /**
  * Renders the full landing page and coordinates UI state for theme, navigation,
@@ -87,8 +88,8 @@ function App() {
       {/* Navigation - Glassmorphic & Minimal */}
       <nav className="fixed top-0 w-full z-40 bg-sand-50/55 dark:bg-sage-950/55 backdrop-blur-md border-b border-transparent transition-all duration-700">
         <div className="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
-          <div className="font-serif text-2xl tracking-widest text-sage-900 dark:text-sage-100">
-            BEWEGTESTILLE
+          <div className="sans-serif font-light text-2xl tracking-widest text-sage-900 dark:text-sage-100">
+            BEWEGTE STILLE
           </div>
 
           <div className="hidden md:flex items-center gap-10">
@@ -98,7 +99,21 @@ function App() {
             <button onClick={toggleTheme} className="p-2 rounded-full text-sage-600 hover:bg-sage-100/50 dark:text-sage-400 dark:hover:bg-sage-800/50 transition-colors">
               {isDarkMode ? <Sun size={20} strokeWidth={1.5} /> : <Moon size={20} strokeWidth={1.5} />}
             </button>
-            <Button onClick={() => openBooking()} size="sm" variant="outline" className="border-sage-400 text-sage-800 dark:border-sage-600 dark:text-sage-100">Termin Buchen</Button>
+            {/*<Button onClick={() => openBooking()} size="sm" variant="outline" className="border-sage-400 text-sage-800 dark:border-sage-600 dark:text-sage-100">Termin Buchen</Button>*/}
+            <Button
+                    onClick={() =>
+                      window.open(
+                        "https://calendar.app.google/UcrTx3J69Witrtbv7",
+                        "_blank",
+                        "noopener,noreferrer"
+                      )
+                    }
+                    size="sm"
+                    variant="outline"
+                    className="border-sage-400 text-sage-800 dark:border-sage-600 dark:text-sage-100"
+                  >
+                    Termin buchen
+                  </Button>
           </div>
 
           <div className="md:hidden flex items-center gap-4">
@@ -120,7 +135,20 @@ function App() {
                <a href="#journal" onClick={() => setIsMenuOpen(false)} className="text-2xl font-serif text-sage-900 dark:text-sage-100">Journal</a>
                <a href="#contact" onClick={() => setIsMenuOpen(false)} className="text-2xl font-serif text-sage-900 dark:text-sage-100">Kontakt</a>
                <div className="pt-8 w-full max-w-xs">
-                 <Button onClick={() => openBooking()} className="w-full" variant="accent">Jetzt Buchen</Button>
+                 <Button
+                    onClick={() =>
+                      window.open(
+                        "https://calendar.app.google/UcrTx3J69Witrtbv7",
+                        "_blank",
+                        "noopener,noreferrer"
+                      )
+                    }
+                    size="sm"
+                    variant="outline"
+                    className="border-sage-400 text-sage-800 dark:border-sage-600 dark:text-sage-100"
+                  >
+                    Termin buchen
+                  </Button>
                </div>
             </div>
           </div>
@@ -142,8 +170,8 @@ function App() {
               </div>
             </Reveal>
             <Reveal delay={0.3}>
-              <h1 className="text-5xl md:text-7xl font-serif text-sage-900 dark:text-sage-50 tracking-wide">
-                Bewegtestille<span className="text-rose-400/80">.</span>
+              <h1 className="text-5xl md:text-7xl sans-serif font-light text-sage-700 dark:text-sage-50 tracking-wide">
+                BEWEGTE STILLE
               </h1>
             </Reveal>
             <Reveal delay={0.5}>
@@ -246,10 +274,10 @@ function App() {
             <div className="space-y-10">
                 <Reveal delay={0.2}>
                     <span className="text-xs font-medium uppercase tracking-widest text-rose-500">Über Mich</span>
-                    <h2 className="text-5xl font-serif text-sage-900 dark:text-sage-50 mt-4">Géraldine <br/>von Ehrenberg</h2>
+                    <h2 className="text-5xl sans-serif text-sage-900 dark:text-sage-50 mt-4">Geraldine <br/>von Ehrenberg</h2>
                 </Reveal>
                 <Reveal delay={0.3}>
-                    <div className="space-y-6 text-lg font-light text-sage-700 dark:text-sage-300 leading-relaxed">
+                    <div className="space-y-6 text-lg font-light text-sage-950 dark:text-sage-300 leading-relaxed">
                         <p>
                             In meiner Arbeit verbinde ich fundiertes medizinisches Wissen mit intuitiver Körperwahrnehmung. 
                             Mein Ziel ist es, nicht nur Symptome zu behandeln, sondern den Menschen in seiner Ganzheit zu erfassen.
@@ -306,7 +334,7 @@ function App() {
       <footer id="contact" className="bg-sage-900 text-sage-200 pt-32 pb-12 px-6">
          <div className="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-16 mb-24">
             <div className="space-y-8">
-                <span className="font-serif text-3xl font-medium tracking-wide text-white">BEWEGTESTILLE</span>
+                <span className="text-3xl font-light tracking-wide text-white">BEWEGTE STILLE</span>
                 <p className="text-sage-400 font-light max-w-xs leading-relaxed">
                     Ein Ort der Ruhe und Regeneration im Herzen von Luzern.
                 </p>
@@ -331,21 +359,21 @@ function App() {
             </div>
 
             <div>
-                 <h4 className="text-xs font-bold uppercase tracking-widest text-sage-500 mb-8">Rechtliches</h4>
+                 {/* <h4 className="text-xs font-bold uppercase tracking-widest text-sage-500 mb-8">Rechtliches</h4>
                  <ul className="space-y-4 text-sage-400 text-sm font-light">
                     <li><a href="#" className="hover:text-white transition-colors">Impressum</a></li>
                     <li><a href="#" className="hover:text-white transition-colors">Datenschutz</a></li>
                     <li><a href="#" className="hover:text-white transition-colors">AGB</a></li>
-                 </ul>
+                 </ul> */}
                  <div className="mt-8">
                      <Button onClick={() => openBooking()} variant="accent" className="w-full">Termin Buchen</Button>
                  </div>
             </div>
          </div>
          
-         <p className="max-w-7xl mx-auto mb-6 text-[11px] text-sage-500">
+        {/*  <p className="max-w-7xl mx-auto mb-6 text-[11px] text-sage-500">
             Demo build by P. Heiniger Design (Andermatt) — design@pascalheiniger.ch
-         </p>
+         </p> */}
 
          <div className="max-w-7xl mx-auto border-t border-sage-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-sage-600 uppercase tracking-widest">
             <p>&copy; {new Date().getFullYear()} Bewegte Stille.</p>
