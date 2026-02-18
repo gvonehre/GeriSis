@@ -96,9 +96,9 @@ function App() {
             <a href="#offers" className="text-sm tracking-wide text-sage-700 hover:text-sage-900 dark:text-sage-300 dark:hover:text-sage-100 transition-colors">Angebote</a>
             <a href="#about" className="text-sm tracking-wide text-sage-700 hover:text-sage-900 dark:text-sage-300 dark:hover:text-sage-100 transition-colors">Über Mich</a>
             {/* <a href="#journal" className="text-sm tracking-wide text-sage-700 hover:text-sage-900 dark:text-sage-300 dark:hover:text-sage-100 transition-colors">Journal</a> */}
-            <button onClick={toggleTheme} className="p-2 rounded-full text-sage-600 hover:bg-sage-100/50 dark:text-sage-400 dark:hover:bg-sage-800/50 transition-colors">
+            {/* <button onClick={toggleTheme} className="p-2 rounded-full text-sage-600 hover:bg-sage-100/50 dark:text-sage-400 dark:hover:bg-sage-800/50 transition-colors">
               {isDarkMode ? <Sun size={20} strokeWidth={1.5} /> : <Moon size={20} strokeWidth={1.5} />}
-            </button>
+            </button> */}
             {/*<Button onClick={() => openBooking()} size="sm" variant="outline" className="border-sage-400 text-sage-800 dark:border-sage-600 dark:text-sage-100">Termin Buchen</Button>*/}
             <Button
                     onClick={() =>
@@ -117,9 +117,9 @@ function App() {
           </div>
 
           <div className="md:hidden flex items-center gap-4">
-            <button onClick={toggleTheme} className="p-2 text-sage-600 dark:text-sage-400">
+            {/* <button onClick={toggleTheme} className="p-2 text-sage-600 dark:text-sage-400">
               {isDarkMode ? <Sun size={20} strokeWidth={1.5} /> : <Moon size={20} strokeWidth={1.5} />}
-            </button>
+            </button> */}
             <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="p-2 text-sage-800 dark:text-sage-100">
               {isMenuOpen ? <CloseIcon size={24} strokeWidth={1.5}/> : <Menu size={24} strokeWidth={1.5} />}
             </button>
@@ -130,10 +130,9 @@ function App() {
         {isMenuOpen && (
           <div className="md:hidden absolute top-24 left-0 w-full h-[calc(100vh-6rem)] bg-sand-50 dark:bg-sage-950 animate-fade-in z-50 overflow-y-auto">
             <div className="flex flex-col p-8 gap-8 items-center text-center mt-10">
-               <a href="#offers" onClick={() => setIsMenuOpen(false)} className="text-2xl font-serif text-sage-900 dark:text-sage-100">Angebote</a>
-               <a href="#about" onClick={() => setIsMenuOpen(false)} className="text-2xl font-serif text-sage-900 dark:text-sage-100">Über Mich</a>
-               <a href="#journal" onClick={() => setIsMenuOpen(false)} className="text-2xl font-serif text-sage-900 dark:text-sage-100">Journal</a>
-               <a href="#contact" onClick={() => setIsMenuOpen(false)} className="text-2xl font-serif text-sage-900 dark:text-sage-100">Kontakt</a>
+               <a href="#offers" onClick={() => setIsMenuOpen(false)} className="text-2xl text-sage-900 dark:text-sage-100">Angebote</a>
+               <a href="#about" onClick={() => setIsMenuOpen(false)} className="text-2xl text-sage-900 dark:text-sage-100">Über Mich</a>
+               <a href="#contact" onClick={() => setIsMenuOpen(false)} className="text-2xl text-sage-900 dark:text-sage-100">Kontakt</a>
                <div className="pt-8 w-full max-w-xs">
                  <Button
                     onClick={() =>
