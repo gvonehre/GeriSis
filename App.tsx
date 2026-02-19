@@ -197,7 +197,7 @@ function App() {
         <Reveal>
             <div className="flex flex-col items-center max-w-7xl mx-auto text-center mb-24 space-y-4">
                 <span className="text-xs font-medium uppercase tracking-widest text-rose-500">Angebot</span>
-                <h2 className="text-4xl md:text-5xl font-serif text-sage-900 dark:text-sage-100">Therapeutische Wege</h2>
+                <h2 className="text-4xl md:text-5xl text-sage-900 dark:text-sage-100">Therapeutische Wege</h2>
                 <p className="max-w-md mx-auto text-sage-500 dark:text-sage-400 leading-relaxed pt-2">
                     Krankenkassenanerkannt (ZSR-Nr. {CONTACT_INFO.zsr}).<br/> Ein Raum für Heilung und Ruhe.
                 </p>
@@ -213,7 +213,7 @@ function App() {
                         
                         <div className="relative">
                             <div className="flex justify-between items-start mb-6">
-                                <h3 className="text-3xl font-serif text-sage-900 dark:text-sage-100 pr-4">{service.title}</h3>
+                                <h3 className="text-3xl text-sage-900 dark:text-sage-100 pr-4">{service.title}</h3>
                             </div>
                             <div className="flex gap-3 mb-8">
                                 <span className="inline-block px-3 py-1 rounded-full bg-sand-100 dark:bg-sage-800 text-xs font-medium tracking-wide text-sage-600 dark:text-sage-300">
@@ -232,7 +232,7 @@ function App() {
                         <div className="flex items-end justify-between relative pt-8 border-t border-sand-100 dark:border-sage-800/50">
                             <div>
                                 <span className="block text-xs text-sage-400 uppercase tracking-wider mb-1">Preis</span>
-                                <span className="text-2xl font-serif text-sage-800 dark:text-sage-200">
+                                <span className="text-2xl text-sage-800 dark:text-sage-200">
                                     CHF {service.priceRange || service.price}
                                 </span>
                             </div>
@@ -313,7 +313,7 @@ function App() {
             <Reveal>
                 <div className="text-center mb-16">
                      <span className="text-xs font-medium uppercase tracking-widest text-sage-500 mb-2 block">Wissenswertes</span>
-                     <h2 className="text-4xl font-serif text-sage-900 dark:text-sage-100">Häufige Fragen</h2>
+                     <h2 className="text-4xl text-sage-900 dark:text-sage-100">Häufige Fragen</h2>
                 </div>
             </Reveal>
             <div className="space-y-6">
@@ -376,10 +376,10 @@ function App() {
 
          <div className="max-w-7xl mx-auto border-t border-sage-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-sage-600 uppercase tracking-widest">
             <p>&copy; {new Date().getFullYear()} Bewegte Stille.</p>
-            <p className="flex items-center gap-2">
+            {/* <p className="flex items-center gap-2">
               <span>Designed by</span>
               <span className="text-sage-400 hover:text-rose-400 transition-colors cursor-default">P. Heiniger Design</span>
-            </p>
+            </p> */}
          </div>
       </footer>
 
