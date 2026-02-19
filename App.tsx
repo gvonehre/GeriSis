@@ -163,22 +163,22 @@ function App() {
         </div>
         
         <div className="max-w-4xl mx-auto text-center space-y-8">
-            <Reveal delay={0.1}>
+            {/* <Reveal delay={0.1}>
               <div className="inline-block px-4 py-1.5 rounded-full mb-2 bg-white/30 dark:bg-black/10 backdrop-blur-sm border border-transparent">
                  <span className="text-[10px] uppercase tracking-[0.3em] text-sage-600 dark:text-sage-400 font-medium">Körpertherapie Luzern</span>
               </div>
-            </Reveal>
+            </Reveal> */}
             <Reveal delay={0.3}>
-              <h1 className="text-5xl md:text-7xl sans-serif font-light text-sage-700 dark:text-sage-50 tracking-wide">
+              <h1 className="text-5xl md:text-5xl sans-serif font-light text-sage-700 dark:text-sage-50 tracking-wide">
                 BEWEGTE STILLE
               </h1>
             </Reveal>
-            <Reveal delay={0.5}>
+            {/* <Reveal delay={0.5}>
               <p className="text-base text-sage-500 dark:text-sage-400 max-w-md mx-auto leading-relaxed font-light">
                 Finden Sie zurück zu Ihrer inneren Balance durch Fussreflexzonen-Therapie und Neurosomatische Körperarbeit.
               </p>
-            </Reveal>
-            <Reveal delay={0.7}>
+            </Reveal> */}
+            {/* <Reveal delay={0.7}>
               <div className="pt-6 flex flex-col sm:flex-row gap-6 justify-center items-center">
                  <Button onClick={() => openBooking()} size="md" variant="outline" className="min-w-[160px] border-sage-300 text-sage-700 hover:bg-sage-50 dark:border-sage-700 dark:text-sage-300 dark:hover:bg-sage-800">
                     Termin vereinbaren
@@ -187,7 +187,7 @@ function App() {
                     Mehr erfahren
                  </a>
               </div>
-            </Reveal>
+            </Reveal> */}
         </div>
       </section>
 
