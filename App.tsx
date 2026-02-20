@@ -242,7 +242,7 @@ useEffect(() => {
       <section id="about" className="py-16 min-h-screen dark:bg-sage-900/30" style={{ backgroundImage: "url('/iStock-1564622193.jpg')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" }}>
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 lg:gap-24 items-center">
             <Reveal>
-                <div className="aspect-[3/4] rounded-t-[8rem] rounded-b-[2rem] overflow-hidden bg-sand-200 dark:bg-sage-800 relative shadow-2xl shadow-sage-200/50 dark:shadow-none group">
+                <div className="aspect-[3/4] rounded-t-[8rem] rounded-b-[2rem] overflow-hidden bg-sand-200 dark:bg-sage-800 relative shadow-none dark:shadow-none group">
                      <div className="absolute inset-0 bg-rose-500/10 dark:bg-rose-500/5 group-hover:opacity-0 transition-opacity duration-700 z-10" />
                      <img 
                         src="/20220224_GVE_001.jpg" 
