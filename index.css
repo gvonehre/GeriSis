@@ -1,103 +1,11 @@
-@font-face {
-    font-family: 'MyFont_BG';
-    src: url('/fonts/subset-BG-Black.woff2') format('woff2');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500&display=swap');
+
+html {
+  font-synthesis: none;
 }
-
-@font-face {
-    font-family: 'MyFont_BG';
-    src: url('/fonts/subset-BG-BlackItalic.woff2') format('woff2');
-    font-weight: 900;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'MyFont_BG';
-    src: url('/fonts/subset-BG-BoldItalic.woff2') format('woff2');
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'MyFont_BG';
-    src: url('/fonts/subset-BG-Bold.woff2') format('woff2');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'MyFont_BG';
-    src: url('/fonts/subset-BG-LightItalic.woff2') format('woff2');
-    font-weight: 300;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'MyFont_BG';
-    src: url('/fonts/subset-BG-Light.woff2') format('woff2');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'MyFont_BG';
-    src: url('/fonts/subset-BG-MediumItalic.woff2') format('woff2');
-    font-weight: 500;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'MyFont_BG';
-    src: url('/fonts/subset-BG-RegularItalic.woff2') format('woff2');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'MyFont_BG';
-    src: url('/fonts/subset-BG-Medium.woff2') format('woff2');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'MyFont_BG';
-    src: url('/fonts/subset-BG-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'MyFont_BG';
-    src: url('/fonts/subset-BG-ThinItalic.woff2') format('woff2');
-    font-weight: 100;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'MyFont_BG';
-    src: url('/fonts/subset-BG-Thin.woff2') format('woff2');
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
-}
-
-
-
 html, body {
-  font-family: "MyFont_BG", sans-serif;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 300;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -109,4 +17,26 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+/* CSS */
+.decorated-heading {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  color: #414141;
+  font-size: 42px;
+  font-weight: 100;
+  letter-spacing: 0.30em;
+  white-space: nowrap;
+}
+
+.decorated-heading::before,
+.decorated-heading::after {
+  content: '';
+  display: block;
+  width: 43px;
+  height: 1px;
+  background: #414141;
+  flex-shrink: 0;
 }

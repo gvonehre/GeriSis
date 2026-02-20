@@ -34,6 +34,14 @@ function App() {
   const [selectedArticle, setSelectedArticle] = useState<Article | null>(null);
   const [isJournalModalOpen, setIsJournalModalOpen] = useState(false);
 
+  const [isScrolled, setIsScrolled] = useState(false);
+
+useEffect(() => {
+  const handleScroll = () => setIsScrolled(window.scrollY > 80);
+  window.addEventListener('scroll', handleScroll);
+  return () => window.removeEventListener('scroll', handleScroll);
+}, []);
+
   // -----------------------------------------------------------------------------
   // Section: Theme handling
   // -----------------------------------------------------------------------------
@@ -85,74 +93,37 @@ function App() {
   return (
     <div className="min-h-screen selection:bg-rose-200 selection:text-rose-900 dark:selection:bg-rose-800 dark:selection:text-rose-100">
       
-      {/* Navigation - Glassmorphic & Minimal */}
-      <nav className="fixed top-0 w-full z-40 bg-sand-50/55 dark:bg-sage-950/55 backdrop-blur-md border-b border-transparent transition-all duration-700">
-        <div className="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
-          <div className="sans-serif font-light text-2xl tracking-widest text-sage-900 dark:text-sage-100">
-            BEWEGTE STILLE
-          </div>
+      
+{/* Navigation - verschwindet beim Scrollen */}
+<nav className={`fixed top-0 w-full z-40 transition-all duration-500 ${isScrolled ? '-translate-y-full' : 'translate-y-0'}`}>
+  <div className="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
+    <div className="sans-serif font-light text-2xl tracking-widest text-sage-900 dark:text-sage-100">
+      
+    </div>
 
-          <div className="hidden md:flex items-center gap-10">
-            <a href="#offers" className="text-sm tracking-wide text-sage-700 hover:text-sage-900 dark:text-sage-300 dark:hover:text-sage-100 transition-colors">Angebote</a>
-            <a href="#about" className="text-sm tracking-wide text-sage-700 hover:text-sage-900 dark:text-sage-300 dark:hover:text-sage-100 transition-colors">Über Mich</a>
-            {/* <a href="#journal" className="text-sm tracking-wide text-sage-700 hover:text-sage-900 dark:text-sage-300 dark:hover:text-sage-100 transition-colors">Journal</a> */}
-            {/* <button onClick={toggleTheme} className="p-2 rounded-full text-sage-600 hover:bg-sage-100/50 dark:text-sage-400 dark:hover:bg-sage-800/50 transition-colors">
-              {isDarkMode ? <Sun size={20} strokeWidth={1.5} /> : <Moon size={20} strokeWidth={1.5} />}
-            </button> */}
-            {/*<Button onClick={() => openBooking()} size="sm" variant="outline" className="border-sage-400 text-sage-800 dark:border-sage-600 dark:text-sage-100">Termin Buchen</Button>*/}
-            <Button
-                    onClick={() =>
-                      window.open(
-                        "https://calendar.app.google/UcrTx3J69Witrtbv7",
-                        "_blank",
-                        "noopener,noreferrer"
-                      )
-                    }
-                    size="sm"
-                    variant="outline"
-                    className="border-sage-400 text-sage-800 dark:border-sage-600 dark:text-sage-100"
-                  >
-                    Termin buchen
-                  </Button>
-          </div>
+    {/* Hamburger mit Hover-Dropdown */}
+    <div className="relative group">
+      <button className="p-2 text-sage-800 dark:text-sage-100">
+        <Menu size={24} strokeWidth={1.5} />
+      </button>
 
-          <div className="md:hidden flex items-center gap-4">
-            {/* <button onClick={toggleTheme} className="p-2 text-sage-600 dark:text-sage-400">
-              {isDarkMode ? <Sun size={20} strokeWidth={1.5} /> : <Moon size={20} strokeWidth={1.5} />}
-            </button> */}
-            <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="p-2 text-sage-800 dark:text-sage-100">
-              {isMenuOpen ? <CloseIcon size={24} strokeWidth={1.5}/> : <Menu size={24} strokeWidth={1.5} />}
-            </button>
-          </div>
+      {/* Dropdown on hover */}
+      <div className="absolute right-0 top-full mt-2 w-40 bg-sage-900 dark:bg-sage-900 rounded-2xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 py-4">
+        <a href="#offers" className="block px-6 py-3 text-sm tracking-wide text-sage-300 hover:text-sage-100 dark:text-sage-300 dark:hover:text-sage-100 transition-colors">Angebote</a>
+        <a href="#about" className="block px-6 py-3 text-sm tracking-wide text-sage-300 hover:text-sage-100 dark:text-sage-300 dark:hover:text-sage-100 transition-colors">Über Mich</a>
+        <a href="#contact" className="block px-6 py-3 text-sm tracking-wide text-sage-300 hover:text-sage-100 dark:text-sage-300 dark:hover:text-sage-100 transition-colors">Kontakt</a>
+        <div className="px-6 pt-3 mt-1 border-t border-sand-100 dark:border-sage-800">
+          <button
+            onClick={() => window.open("https://calendar.app.google/UcrTx3J69Witrtbv7", "_blank", "noopener,noreferrer")}
+            className="text-sm tracking-wide text-rose-500 hover:text-rose-700 transition-colors"
+          >
+            Termin buchen
+          </button>
         </div>
-
-        {/* Mobile Menu Overlay */}
-        {isMenuOpen && (
-          <div className="md:hidden absolute top-24 left-0 w-full h-[calc(100vh-6rem)] bg-sand-50 dark:bg-sage-950 animate-fade-in z-50 overflow-y-auto">
-            <div className="flex flex-col p-8 gap-8 items-center text-center mt-10">
-               <a href="#offers" onClick={() => setIsMenuOpen(false)} className="text-2xl text-sage-900 dark:text-sage-100">Angebote</a>
-               <a href="#about" onClick={() => setIsMenuOpen(false)} className="text-2xl text-sage-900 dark:text-sage-100">Über Mich</a>
-               <a href="#contact" onClick={() => setIsMenuOpen(false)} className="text-2xl text-sage-900 dark:text-sage-100">Kontakt</a>
-               <div className="pt-8 w-full max-w-xs">
-                 <Button
-                    onClick={() =>
-                      window.open(
-                        "https://calendar.app.google/UcrTx3J69Witrtbv7",
-                        "_blank",
-                        "noopener,noreferrer"
-                      )
-                    }
-                    size="sm"
-                    variant="outline"
-                    className="border-sage-400 text-sage-800 dark:border-sage-600 dark:text-sage-100"
-                  >
-                    Termin buchen
-                  </Button>
-               </div>
-            </div>
-          </div>
-        )}
-      </nav>
+      </div>
+    </div>
+  </div>
+</nav>
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden" style={{ backgroundImage: "url('/iStock-1564622193.jpg')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" }}>
@@ -169,9 +140,19 @@ function App() {
               </div>
             </Reveal> */}
             <Reveal delay={0.3}>
-              <h1 className="text-5xl md:text-5xl sans-serif font-light text-sage-700 dark:text-sage-50 tracking-wide">
+              <h1 className="decorated-heading mb-14">
                 BEWEGTE STILLE
               </h1>
+            </Reveal>
+            <Reveal delay={0.5}>
+              <div className="inline-block px-4 py-1.5 rounded-full bg-white/20 backdrop-blur-sm border border-transparent">
+                 <span className="text-[10px] uppercase tracking-[0.3em] text-sage-600 font-medium">Fussreflexzonen Therapie</span>
+              </div>
+            </Reveal>
+            <Reveal delay={0.7}>
+              <div className="inline-block px-4 py-1.5 rounded-full bg-white/20 backdrop-blur-sm border border-transparent">
+                 <span className="text-[10px] uppercase tracking-[0.3em] text-sage-600 font-medium">Neurosomatische Körpertherapie</span>
+              </div>
             </Reveal>
             {/* <Reveal delay={0.5}>
               <p className="text-base text-sage-500 dark:text-sage-400 max-w-md mx-auto leading-relaxed font-light">
@@ -193,10 +174,10 @@ function App() {
 
       {/* Offers Section */}
       {/* <section id="offers" className="py-32 px-6 max-w-7xl mx-auto"> */}
-      <section id="offers" className="relative z-10 py-32 px-6 bg-white dark:bg-sage-950">
+      <section id="offers" className="relative min-h-screen z-10 py-24 px-6 bg-white dark:bg-sage-950" style={{ backgroundImage: "url('/iStock-1564622193_flip.jpg')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" }}>
         <Reveal>
             <div className="flex flex-col items-center max-w-7xl mx-auto text-center mb-24 space-y-4">
-                <span className="text-xs font-medium uppercase tracking-widest text-rose-500">Angebot</span>
+                <span className="text-xs font-medium uppercase tracking-widest text-rose-500" style={{ color: "#174652" }}>Angebot</span>
                 <h2 className="text-4xl md:text-5xl text-sage-900 dark:text-sage-100">Therapeutische Wege</h2>
                 <p className="max-w-md mx-auto text-sage-500 dark:text-sage-400 leading-relaxed pt-2">
                     Krankenkassenanerkannt (ZSR-Nr. {CONTACT_INFO.zsr}).<br/> Ein Raum für Heilung und Ruhe.
@@ -258,25 +239,25 @@ function App() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-32 bg-white dark:bg-sage-900/30" style={{ backgroundImage: "url('/iStock-1564622193.jpg')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "repeat" }}>
+      <section id="about" className="py-16 min-h-screen dark:bg-sage-900/30" style={{ backgroundImage: "url('/iStock-1564622193.jpg')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" }}>
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 lg:gap-24 items-center">
             <Reveal>
-                <div className="aspect-[3/4] rounded-t-[10rem] rounded-b-[2rem] overflow-hidden bg-sand-200 dark:bg-sage-800 relative shadow-2xl shadow-sage-200/50 dark:shadow-none group">
+                <div className="aspect-[3/4] rounded-t-[8rem] rounded-b-[2rem] overflow-hidden bg-sand-200 dark:bg-sage-800 relative shadow-2xl shadow-sage-200/50 dark:shadow-none group">
                      <div className="absolute inset-0 bg-rose-500/10 dark:bg-rose-500/5 group-hover:opacity-0 transition-opacity duration-700 z-10" />
                      <img 
                         src="/20220224_GVE_001.jpg" 
                         alt="Géraldine von Ehrenberg" 
-                        className="object-cover w-full h-full opacity-90 group-hover:scale-105 transition-transform duration-[2s]"
+                        className="object-cover w-full h-full opacity-90 group-hover:scale-105 transition-transform duration-[2s] rounded-t-[8rem] rounded-b-[2rem]"
                     />
                 </div>
             </Reveal>
             <div className="space-y-10">
                 <Reveal delay={0.2}>
-                    <span className="text-xs font-medium uppercase tracking-widest text-rose-500">Über Mich</span>
-                    <h2 className="text-5xl sans-serif text-sage-900 dark:text-sage-50 mt-4">Geraldine <br/>von Ehrenberg</h2>
+                    <span className="text-xs font-medium uppercase tracking-widest text-rose-500" style={{ color: "#174652" }}>Über Mich</span>
+                    <h2 className="text-5xl dark:text-sage-50 mt-4" style={{ color: "#174652", paddingBottom: "0.15em"}}>Géraldine <br/>von Ehrenberg</h2>
                 </Reveal>
                 <Reveal delay={0.3}>
-                    <div className="space-y-6 text-lg font-light text-sage-950 dark:text-sage-300 leading-relaxed">
+                    <div className="space-y-6 text-lg font-light text-sage-950 dark:text-sage-300 leading-relaxed" style={{ color: "#174652" }}>
                         <p>
                             In meiner Arbeit verbinde ich fundiertes medizinisches Wissen mit intuitiver Körperwahrnehmung. 
                             Mein Ziel ist es, nicht nur Symptome zu behandeln, sondern den Menschen in seiner Ganzheit zu erfassen.
@@ -289,15 +270,15 @@ function App() {
                 </Reveal>
                 <Reveal delay={0.4}>
                      <ul className="space-y-4 pt-4">
-                        <li className="flex items-center gap-4 text-sm font-medium uppercase tracking-wide text-sage-600 dark:text-sage-400">
+                        <li className="flex items-center gap-4 text-sm font-medium uppercase tracking-wide text-sage-600 dark:text-sage-400" style={{ color: "#174652" }}>
                             <span className="w-8 h-[1px] bg-rose-400"></span> 
                             Dipl. Fussreflexzonen-Therapeutin
                         </li>
-                        <li className="flex items-center gap-4 text-sm font-medium uppercase tracking-wide text-sage-600 dark:text-sage-400">
+                        <li className="flex items-center gap-4 text-sm font-medium uppercase tracking-wide text-sage-600 dark:text-sage-400" style={{ color: "#174652" }}>
                              <span className="w-8 h-[1px] bg-rose-400"></span> 
                              Neurosomatische Integration®
                         </li>
-                        <li className="flex items-center gap-4 text-sm font-medium uppercase tracking-wide text-sage-600 dark:text-sage-400">
+                        <li className="flex items-center gap-4 text-sm font-medium uppercase tracking-wide text-sage-600 dark:text-sage-400" style={{ color: "#174652" }}>
                              <span className="w-8 h-[1px] bg-rose-400"></span> 
                              EMR Qualitätslabel
                         </li>
@@ -308,12 +289,12 @@ function App() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-32 bg-sand-100 dark:bg-sage-950/50">
+      <section className="min-h-screen py-32 bg-sand-100 dark:bg-sage-950/50">
          <div className="max-w-3xl mx-auto px-6">
             <Reveal>
                 <div className="text-center mb-16">
                      <span className="text-xs font-medium uppercase tracking-widest text-sage-500 mb-2 block">Wissenswertes</span>
-                     <h2 className="text-4xl text-sage-900 dark:text-sage-100">Häufige Fragen</h2>
+                     <h2 className="text-4xl font-light text-sage-900 dark:text-sage-100">Häufige Fragen</h2>
                 </div>
             </Reveal>
             <div className="space-y-6">
@@ -342,6 +323,13 @@ function App() {
             <div className="lg:col-start-3">
                 <h4 className="text-xs font-bold uppercase tracking-widest text-sage-500 mb-8">Kontakt</h4>
                 <ul className="space-y-6 text-sage-300 font-light">
+                    {/* NAME */}
+                    <li className="flex items-start gap-4">
+                      <span className="w-5" /> 
+                      <span className="font-medium text-sage-100">
+                        {CONTACT_INFO.name}
+                      </span>
+                    </li>
                     <li className="flex items-start gap-4">
                         <MapPin size={20} className="shrink-0 text-rose-400"/>
                         <span className="leading-relaxed">{CONTACT_INFO.address}</span>
