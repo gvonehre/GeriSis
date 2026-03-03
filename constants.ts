@@ -10,7 +10,7 @@ export const SERVICES: Service[] = [
   {
     id: 'reflex',
     title: 'Fussreflexzonen-Therapie',
-    duration: '60 – 75 Min.',
+    duration: '60 – 90 Min.',
     price: 120, // Base price
     priceRange: '120 – 150',
     isReflexology: true,
@@ -28,7 +28,7 @@ export const SERVICES: Service[] = [
   {
     id: 'neuro',
     title: 'Neurosomatische Körperarbeit',
-    duration: '60 Min.',
+    duration: '60 – 120 Min.',
     price: 120,
     description: 'Tiefenentspannung und Neuausrichtung des Nervensystems durch sanfte Impulse.',
     longDescription: 'Die Neurosomatische Integration® ist eine sanfte, aber tiefgreifende Methode zur Regulation des Nervensystems. Durch achtsame Berührung und gezielte Impulse wird dem Körper geholfen, Stressmuster loszulassen und in einen Zustand der Sicherheit und Entspannung zurückzufinden. Besonders geeignet bei chronischen Schmerzen, Erschöpfung und innerer Unruhe.',

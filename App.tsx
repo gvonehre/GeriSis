@@ -145,12 +145,12 @@ useEffect(() => {
               </h1>
             </Reveal>
             <Reveal delay={0.5}>
-              <div className="inline-block px-4 py-1.5 rounded-full bg-white/20 backdrop-blur-sm border border-transparent">
+              <div className="inline-block px-4 py-1.5 rounded-full backdrop-blur-sm border border-transparent">
                  <span className="text-[10px] uppercase tracking-[0.3em] text-sage-600 font-medium">Fussreflexzonen Therapie</span>
               </div>
             </Reveal>
             <Reveal delay={0.7}>
-              <div className="inline-block px-4 py-1.5 rounded-full bg-white/20 backdrop-blur-sm border border-transparent">
+              <div className="inline-block px-4 py-1.5 rounded-full backdrop-blur-sm border border-transparent">
                  <span className="text-[10px] uppercase tracking-[0.3em] text-sage-600 font-medium">Neurosomatische Körpertherapie</span>
               </div>
             </Reveal>
@@ -180,7 +180,7 @@ useEffect(() => {
                 <span className="text-xs font-medium uppercase tracking-widest text-rose-500" style={{ color: "#174652" }}>Angebot</span>
                 <h2 className="text-4xl md:text-5xl text-sage-900 dark:text-sage-100">Therapeutische Wege</h2>
                 <p className="max-w-md mx-auto text-sage-500 dark:text-sage-400 leading-relaxed pt-2">
-                    Krankenkassenanerkannt (ZSR-Nr. {CONTACT_INFO.zsr}).<br/> Ein Raum für Heilung und Ruhe.
+                    Mit der Fussreflexzonen-Behandlung bin ich Krankenkassenanerkannt (ZSR-Nr. {CONTACT_INFO.zsr}).
                 </p>
             </div>
         </Reveal>
@@ -242,12 +242,12 @@ useEffect(() => {
       <section id="about" className="py-16 min-h-screen dark:bg-sage-900/30" style={{ backgroundImage: "url('/iStock-1564622193.jpg')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" }}>
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 lg:gap-24 items-center">
             <Reveal>
-                <div className="aspect-[3/4] rounded-t-[8rem] rounded-b-[2rem] overflow-hidden bg-sand-200 dark:bg-sage-800 relative shadow-none dark:shadow-none group">
+                <div className="aspect-[3/4] overflow-hidden bg-sand-200 dark:bg-sage-800 relative shadow-none dark:shadow-none group">
                      <div className="absolute inset-0 bg-rose-500/10 dark:bg-rose-500/5 group-hover:opacity-0 transition-opacity duration-700 z-10" />
                      <img 
                         src="/20220224_GVE_001.jpg" 
                         alt="Géraldine von Ehrenberg" 
-                        className="object-cover w-full h-full opacity-90 group-hover:scale-105 transition-transform duration-[2s] rounded-t-[8rem] rounded-b-[2rem]"
+                        className="object-cover w-full h-full opacity-90 group-hover:scale-105 transition-transform duration-[2s]"
                     />
                 </div>
             </Reveal>
