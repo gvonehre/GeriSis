@@ -114,7 +114,7 @@ useEffect(() => {
         <a href="#contact" className="block px-6 py-3 text-sm tracking-wide text-sage-300 hover:text-sage-100 dark:text-sage-300 dark:hover:text-sage-100 transition-colors">Kontakt</a>
         <div className="px-6 pt-3 mt-1 border-t border-sand-100 dark:border-sage-800">
           <button
-            onClick={() => window.open("https://calendar.app.google/UcrTx3J69Witrtbv7", "_blank", "noopener,noreferrer")}
+            onClick={() => window.open("https://calendar.app.google/pXGyFkn9dMtQRvnQA", "_blank", "noopener,noreferrer")}
             className="text-sm tracking-wide text-rose-500 hover:text-rose-700 transition-colors"
           >
             Termin buchen
