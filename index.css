@@ -24,7 +24,7 @@ body {
   display: flex;
   align-items: center;
   gap: 17px;
-  color: #414141;
+  color: #174652;
   font-size: 42px;
   font-weight: 100;
   letter-spacing: 0.30em;
@@ -39,4 +39,8 @@ body {
   height: 1px;
   background: #414141;
   flex-shrink: 0;
+}
+
+.hero-color {
+color: #174652;
 }

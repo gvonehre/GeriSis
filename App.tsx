@@ -91,7 +91,7 @@ useEffect(() => {
   };
 
   return (
-    <div className="min-h-screen selection:bg-rose-200 selection:text-rose-900 dark:selection:bg-rose-800 dark:selection:text-rose-100">
+    <div className="min-h-screen selection:bg-rose-200 selection:text-rose-900 dark:selection:bg-rose-800 dark:selection:text-rose-100 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/iStock-1564622193_extended.jpg')" }}>
       
       
 {/* Navigation - verschwindet beim Scrollen */}
@@ -103,18 +103,18 @@ useEffect(() => {
 
     {/* Hamburger mit Hover-Dropdown */}
     <div className="relative group">
-      <button className="p-2 text-sage-800 dark:text-sage-100">
+      <button className="p-2 hero-color">
         <Menu size={24} strokeWidth={1.5} />
       </button>
 
       {/* Dropdown on hover */}
-      <div className="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-40 bg-transparent text-center opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 py-4">
+      <div className="hero-color absolute left-1/2 -translate-x-1/2 top-full mt-2 w-40 bg-transparent text-center opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 py-4">
         <a href="#offers" className="block px-6 py-3 text-sm tracking-wide hover:text-sage-100 transition-colors font-medium">Angebote</a>
         <a href="#about" className="block px-6 py-3 text-sm tracking-wide hover:text-sage-100 transition-colors font-medium">Über Mich</a>
         <a href="#contact" className="block px-6 py-3 text-sm tracking-wide hover:text-sage-100 transition-colors font-medium">Kontakt</a>
           <button
             onClick={() => window.open("https://calendar.app.google/pXGyFkn9dMtQRvnQA", "_blank", "noopener,noreferrer")}
-            className="text-sm tracking-wide hover:text-sage-100 transition-colors font-medium"
+            className="text-sm py-3 tracking-wide hover:text-sage-100 transition-colors font-bold"
           >
             Termin buchen
           </button>
@@ -124,7 +124,7 @@ useEffect(() => {
 </nav>
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden" style={{ backgroundImage: "url('/iStock-1564622193.jpg')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" }}>
+      <section className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden">
         {/* Abstract Background Shapes */}
         <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
             <div className="absolute top-[10%] left-[20%] w-[60vh] h-[60vh] bg-rose-200/30 dark:bg-rose-900/10 rounded-full blur-[120px] mix-blend-multiply dark:mix-blend-screen animate-pulse-slow" />
@@ -132,21 +132,16 @@ useEffect(() => {
         </div>
         
         <div className="max-w-4xl mx-auto text-center space-y-8">
-            {/* <Reveal delay={0.1}>
-              <div className="inline-block px-4 py-1.5 rounded-full mb-2 bg-white/30 dark:bg-black/10 backdrop-blur-sm border border-transparent">
-                 <span className="text-[10px] uppercase tracking-[0.3em] text-sage-600 dark:text-sage-400 font-medium">Körpertherapie Luzern</span>
-              </div>
-            </Reveal> */}
             <Reveal delay={0.3}>
               <h1 className="decorated-heading mb-14">
                 BEWEGTE STILLE
               </h1>
             </Reveal>
             <Reveal delay={0.5}>
-                 <span className="text-[18px] uppercase tracking-[0.3em] text-sage-600">Neurosomatische Körpertherapie</span>
+                 <span className="hero-color text-[18px] uppercase tracking-[0.3em]">Neurosomatische Körpertherapie</span>
             </Reveal>
             <Reveal delay={0.7}>
-                 <span className="text-[18px] uppercase tracking-[0.3em] text-sage-600">Fussreflexzonen Therapie</span>
+                 <span className="hero-color text-[18px] uppercase tracking-[0.3em]">Fussreflexzonen Therapie</span>
             </Reveal>
             {/* <Reveal delay={0.5}>
               <p className="text-base text-sage-500 dark:text-sage-400 max-w-md mx-auto leading-relaxed font-light">
@@ -168,12 +163,12 @@ useEffect(() => {
 
       {/* Offers Section */}
       {/* <section id="offers" className="py-32 px-6 max-w-7xl mx-auto"> */}
-      <section id="offers" className="relative min-h-screen z-10 py-24 px-6 bg-white dark:bg-sage-950" style={{ backgroundImage: "url('/iStock-1564622193_flip.jpg')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" }}>
+      <section id="offers" className="relative min-h-screen z-10 py-24 px-6">
         <Reveal>
             <div className="flex flex-col items-center max-w-7xl mx-auto text-center mb-24 space-y-4">
-                <span className="text-xs font-medium uppercase tracking-widest text-rose-500" style={{ color: "#174652" }}>Angebot</span>
-                <h2 className="text-4xl md:text-5xl text-sage-900 dark:text-sage-100">Therapeutische Wege</h2>
-                <p className="max-w-md mx-auto text-sage-500 dark:text-sage-400 leading-relaxed pt-2">
+                <span className="text-xs hero-color font-medium uppercase tracking-widest">Angebot</span>
+                <h2 className="text-4xl md:text-5xl hero-color">Therapeutische Wege</h2>
+                <p className="max-w-md mx-auto hero-color leading-relaxed pt-2">
                     Mit der Fussreflexzonen-Behandlung bin ich Krankenkassenanerkannt (ZSR-Nr. {CONTACT_INFO.zsr}).
                 </p>
             </div>
@@ -182,9 +177,8 @@ useEffect(() => {
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 lg:gap-12">
             {SERVICES.map((service, idx) => (
                 <Reveal key={service.id} delay={idx * 0.2}>
-                    <div className="group p-10 rounded-[2.5rem] bg-white dark:bg-sage-900 border border-sand-100 dark:border-sage-800 hover:border-rose-200 dark:hover:border-rose-900/50 shadow-sm hover:shadow-2xl hover:shadow-rose-100/30 dark:hover:shadow-none transition-all duration-500 h-full flex flex-col justify-between relative overflow-hidden">
-                        {/* Decorative blob on hover */}
-                        <div className="absolute -right-20 -top-20 w-64 h-64 bg-rose-50 dark:bg-rose-900/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
+                    <div className="group p-10 rounded-[2.5rem] bg-[#F6E6D2] border border-[#F6E6D2]  hover:border-rose-200 shadow-sm hover:shadow-2xl hover:shadow-rose-100/30 dark:hover:shadow-none transition-all duration-500 h-full flex flex-col justify-between relative overflow-hidden">
+
                         
                         <div className="relative">
                             <div className="flex justify-between items-start mb-6">
@@ -200,11 +194,11 @@ useEffect(() => {
                                     </span>
                                 )}
                             </div>
-                            <p className="text-sage-600 dark:text-sage-300 mb-8 leading-relaxed text-lg font-light">
+                            <p className="text-sage-600 mb-8 leading-relaxed text-lg font-light">
                                 {service.description}
                             </p>
                         </div>
-                        <div className="flex items-end justify-between relative pt-8 border-t border-sand-100 dark:border-sage-800/50">
+                        <div className="flex items-end justify-between relative pt-8 border-t border-[#174652]">
                             <div>
                                 <span className="block text-xs text-sage-400 uppercase tracking-wider mb-1">Preis</span>
                                 <span className="text-2xl text-sage-800 dark:text-sage-200">
@@ -218,12 +212,6 @@ useEffect(() => {
                                 >
                                     Details
                                 </button>
-                                <button 
-                                    onClick={() => openBooking(service.id)}
-                                    className="w-12 h-12 rounded-full bg-sage-50 dark:bg-sage-800 flex items-center justify-center text-sage-600 dark:text-sage-300 group-hover:bg-rose-400 group-hover:text-white dark:group-hover:bg-rose-500 dark:group-hover:text-white transition-all duration-300 shadow-sm"
-                                >
-                                    <ArrowRight size={20} />
-                                </button>
                             </div>
                         </div>
                     </div>
@@ -233,7 +221,7 @@ useEffect(() => {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-16 min-h-screen dark:bg-sage-900/30" style={{ backgroundImage: "url('/iStock-1564622193.jpg')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" }}>
+      <section id="about" className="py-16 min-h-screen">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 lg:gap-24 items-center">
             <Reveal>
                 <div className="aspect-[3/4] overflow-hidden bg-sand-200 dark:bg-sage-800 relative shadow-none dark:shadow-none group">
