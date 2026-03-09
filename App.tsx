@@ -241,33 +241,59 @@ useEffect(() => {
                 <Reveal delay={0.3}>
                     <div className="space-y-6 text-lg font-light text-sage-950 dark:text-sage-300 leading-relaxed" style={{ color: "#174652" }}>
                         <p>
-                            In meiner Arbeit verbinde ich fundiertes medizinisches Wissen mit intuitiver Körperwahrnehmung. 
-                            Mein Ziel ist es, nicht nur Symptome zu behandeln, sondern den Menschen in seiner Ganzheit zu erfassen.
+                            Ich bin gerne…
+                            in Bewegung, in den Bergen, neues am Entdecken, am Lernen, mit Menschen, in der Stille.
                         </p>
                         <p>
-                            Als EMR-anerkannte Therapeutin begleite ich Sie auf Ihrem Weg zu mehr Wohlbefinden, 
-                            Schmerzfreiheit und innerer Stille.
+                            Mit Bewegung und Sport – sei es als Bewegungstherapeutin oder Sportlehrerin - habe ich schon immer gerne Menschen begleitet und unterstützt. Ich habe ein ehrliches Interesse an jedem Menschen und seiner Geschichte.
+Mit Präsenz und Ruhe begleite ich dich wertschätzend, herzlich und klar. Zusammen erkunden wir deine persönlichen Themen und ich begleite dich durch Körperwahrnehmung, Berührung und Bewegung bei den aktuellen Anliegen. Durch meine Fähigkeit erlerntes Wissen und Intuition miteinander zu verbinden, gestaltet sich jede Behandlung individuell und auf deine Bedürfnisse angepasst. 
                         </p>
                     </div>
                 </Reveal>
-                <Reveal delay={0.4}>
-                     <ul className="space-y-4 pt-4">
-                        <li className="flex items-center gap-4 text-sm font-medium uppercase tracking-wide text-sage-600 dark:text-sage-400" style={{ color: "#174652" }}>
-                            <span className="w-8 h-[1px] bg-rose-400"></span> 
-                            Dipl. Fussreflexzonen-Therapeutin
-                        </li>
-                        <li className="flex items-center gap-4 text-sm font-medium uppercase tracking-wide text-sage-600 dark:text-sage-400" style={{ color: "#174652" }}>
-                             <span className="w-8 h-[1px] bg-rose-400"></span> 
-                             Neurosomatische Integration®
-                        </li>
-                        <li className="flex items-center gap-4 text-sm font-medium uppercase tracking-wide text-sage-600 dark:text-sage-400" style={{ color: "#174652" }}>
-                             <span className="w-8 h-[1px] bg-rose-400"></span> 
-                             EMR Qualitätslabel
-                        </li>
-                     </ul>
-                </Reveal>
             </div>
         </div>
+        <div className="max-w-6xl mx-auto items-center py-10 hero-color">
+                <Reveal delay={0.4}>
+                  <div className="flex justify-center pt-4">
+                    <ul className="space-y-4">
+                      <li className="flex items-center gap-4 text-sm uppercase tracking-wide hero-color" >
+                        <span className="w-8 h-[1px] bg-[#174652]"></span> 
+                        2024 Practitioner NSTI® III i.A., Institut für Traumaintegration Zürich
+                      </li>
+                      <li className="flex items-center gap-4 text-sm uppercase tracking-wide">
+                        <span className="w-8 h-[1px] bg-[#174652]"></span> 
+                        2024 Assistenz Practitioner NSTI® I, Institut für Traumaintegration Zürich
+                      </li>
+                      <li className="flex items-center gap-4 text-sm uppercase tracking-wide">
+                        <span className="w-8 h-[1px] bg-[#174652]"></span> 
+                        2023 Dipl. Fussreflexzonen-Therapeutin, HPS Ebikon
+                      </li>
+                      <li className="flex items-center gap-4 text-sm uppercase tracking-wide">
+                        <span className="w-8 h-[1px] bg-[#174652]"></span> 
+                        2020 Woman-Coaching Training Petra Nussbaum, Zürich
+                      </li>
+                      <li className="flex items-center gap-4 text-sm uppercase tracking-wide">
+                        <span className="w-8 h-[1px] bg-[#174652]"></span> 
+                        2018 200h Yoga Ausbildung, Sanapurna Ayurveda & Yoga, Zürich
+                      </li>
+                      <li className="flex items-center gap-4 text-sm uppercase tracking-wide">
+                        <span className="w-8 h-[1px] bg-[#174652]"></span> 
+                        2017 Lehrdiplom Sek II, ETH Zürich
+                      </li>
+                      <li className="flex items-center gap-4 text-sm uppercase tracking-wide">
+                        <span className="w-8 h-[1px] bg-[#174652]"></span> 
+                        2016 Medizinische Trainingstherapie, SVGS Zürich
+                      </li>
+                      <li className="flex items-center gap-4 text-sm uppercase tracking-wide">
+                        <span className="w-8 h-[1px] bg-[#174652]"></span> 
+                        2014 Master Bewegungswissenschaften und Sport, ETH Zürich
+                      </li>
+                    </ul>
+                  </div>
+                </Reveal>
+        </div>
+
+
       </section>
 
       {/* Footer / Contact */}
