@@ -108,18 +108,16 @@ useEffect(() => {
       </button>
 
       {/* Dropdown on hover */}
-      <div className="absolute right-0 top-full mt-2 w-40 bg-sage-900 dark:bg-sage-900 rounded-2xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 py-4">
-        <a href="#offers" className="block px-6 py-3 text-sm tracking-wide text-sage-300 hover:text-sage-100 dark:text-sage-300 dark:hover:text-sage-100 transition-colors">Angebote</a>
-        <a href="#about" className="block px-6 py-3 text-sm tracking-wide text-sage-300 hover:text-sage-100 dark:text-sage-300 dark:hover:text-sage-100 transition-colors">Über Mich</a>
-        <a href="#contact" className="block px-6 py-3 text-sm tracking-wide text-sage-300 hover:text-sage-100 dark:text-sage-300 dark:hover:text-sage-100 transition-colors">Kontakt</a>
-        <div className="px-6 pt-3 mt-1 border-t border-sand-100 dark:border-sage-800">
+      <div className="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-40 bg-transparent text-center opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 py-4">
+        <a href="#offers" className="block px-6 py-3 text-sm tracking-wide hover:text-sage-100 transition-colors font-medium">Angebote</a>
+        <a href="#about" className="block px-6 py-3 text-sm tracking-wide hover:text-sage-100 transition-colors font-medium">Über Mich</a>
+        <a href="#contact" className="block px-6 py-3 text-sm tracking-wide hover:text-sage-100 transition-colors font-medium">Kontakt</a>
           <button
             onClick={() => window.open("https://calendar.app.google/pXGyFkn9dMtQRvnQA", "_blank", "noopener,noreferrer")}
-            className="text-sm tracking-wide text-rose-500 hover:text-rose-700 transition-colors"
+            className="text-sm tracking-wide hover:text-sage-100 transition-colors font-medium"
           >
             Termin buchen
           </button>
-        </div>
       </div>
     </div>
   </div>
@@ -145,14 +143,10 @@ useEffect(() => {
               </h1>
             </Reveal>
             <Reveal delay={0.5}>
-              <div className="inline-block px-4 py-1.5 rounded-full backdrop-blur-sm border border-transparent">
-                 <span className="text-[10px] uppercase tracking-[0.3em] text-sage-600 font-medium">Fussreflexzonen Therapie</span>
-              </div>
+                 <span className="text-[18px] uppercase tracking-[0.3em] text-sage-600">Neurosomatische Körpertherapie</span>
             </Reveal>
             <Reveal delay={0.7}>
-              <div className="inline-block px-4 py-1.5 rounded-full backdrop-blur-sm border border-transparent">
-                 <span className="text-[10px] uppercase tracking-[0.3em] text-sage-600 font-medium">Neurosomatische Körpertherapie</span>
-              </div>
+                 <span className="text-[18px] uppercase tracking-[0.3em] text-sage-600">Fussreflexzonen Therapie</span>
             </Reveal>
             {/* <Reveal delay={0.5}>
               <p className="text-base text-sage-500 dark:text-sage-400 max-w-md mx-auto leading-relaxed font-light">
@@ -286,28 +280,6 @@ useEffect(() => {
                 </Reveal>
             </div>
         </div>
-      </section>
-
-      {/* FAQ Section */}
-      <section className="min-h-screen py-32 bg-sand-100 dark:bg-sage-950/50">
-         <div className="max-w-3xl mx-auto px-6">
-            <Reveal>
-                <div className="text-center mb-16">
-                     <span className="text-xs font-medium uppercase tracking-widest text-sage-500 mb-2 block">Wissenswertes</span>
-                     <h2 className="text-4xl font-light text-sage-900 dark:text-sage-100">Häufige Fragen</h2>
-                </div>
-            </Reveal>
-            <div className="space-y-6">
-                {FAQS.map((faq, idx) => (
-                    <Reveal key={idx} delay={idx * 0.1}>
-                        <div className="bg-white dark:bg-sage-900 p-8 rounded-2xl shadow-sm border border-transparent hover:border-rose-200 dark:hover:border-sage-700 transition-all duration-300">
-                            <h4 className="text-lg font-medium text-sage-900 dark:text-sage-100 mb-3">{faq.question}</h4>
-                            <p className="text-sage-600 dark:text-sage-400 leading-relaxed font-light">{faq.answer}</p>
-                        </div>
-                    </Reveal>
-                ))}
-            </div>
-         </div>
       </section>
 
       {/* Footer / Contact */}
