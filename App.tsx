@@ -138,26 +138,11 @@ useEffect(() => {
               </h1>
             </Reveal>
             <Reveal delay={0.5}>
-                 <span className="hero-color text-[18px] uppercase tracking-[0.3em]">Neurosomatische Körpertherapie</span>
+                 <span className="hero-color uppercase tracking-[0.3em]" style={{ fontSize: 'clamp(12px, 3vw, 18px)' }}>Neurosomatische Körpertherapie</span>
             </Reveal>
             <Reveal delay={0.7}>
-                 <span className="hero-color text-[18px] uppercase tracking-[0.3em]">Fussreflexzonen Therapie</span>
+                 <span className="hero-color uppercase tracking-[0.3em]" style={{ fontSize: 'clamp(12px, 3vw, 18px)' }}>Fussreflexzonen Therapie</span>
             </Reveal>
-            {/* <Reveal delay={0.5}>
-              <p className="text-base text-sage-500 dark:text-sage-400 max-w-md mx-auto leading-relaxed font-light">
-                Finden Sie zurück zu Ihrer inneren Balance durch Fussreflexzonen-Therapie und Neurosomatische Körperarbeit.
-              </p>
-            </Reveal> */}
-            {/* <Reveal delay={0.7}>
-              <div className="pt-6 flex flex-col sm:flex-row gap-6 justify-center items-center">
-                 <Button onClick={() => openBooking()} size="md" variant="outline" className="min-w-[160px] border-sage-300 text-sage-700 hover:bg-sage-50 dark:border-sage-700 dark:text-sage-300 dark:hover:bg-sage-800">
-                    Termin vereinbaren
-                 </Button>
-                 <a href="#about" className="text-xs font-medium uppercase tracking-widest text-sage-400 hover:text-sage-600 dark:text-sage-500 dark:hover:text-sage-300 transition-colors">
-                    Mehr erfahren
-                 </a>
-              </div>
-            </Reveal> */}
         </div>
       </section>
 

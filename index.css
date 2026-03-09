@@ -23,11 +23,11 @@ body {
 .decorated-heading {
   display: flex;
   align-items: center;
-  gap: 17px;
+  gap: 1rem; /* Abstand zwischen Strichen und Text */
   color: #174652;
-  font-size: 42px;
+  font-size: clamp(1.5rem, 6vw, 2.625rem); /* dynamische Skalierung */
   font-weight: 100;
-  letter-spacing: 0.30em;
+  letter-spacing: 0.3em;
   white-space: nowrap;
 }
 
@@ -35,9 +35,9 @@ body {
 .decorated-heading::after {
   content: '';
   display: block;
-  width: 43px;
+  width: clamp(2rem, 10vw, 4rem); /* Striche skalieren proportional zum Text */
   height: 1px;
-  background: #414141;
+  background: #174652;
   flex-shrink: 0;
 }
 
