@@ -185,7 +185,7 @@ useEffect(() => {
                                 <h3 className="text-3xl hero-color pr-4">{service.title}</h3>
                             </div>
                             <div className="flex gap-3 mb-8">
-                                <span className="inline-block px-3 py-1 rounded-full bg-sage-800 text-xs font-medium tracking-wide text-sage-300">
+                                <span className="inline-block px-3 py-1 rounded-full bg-[#174652] text-xs font-medium tracking-wide text-sage-100">
                                     {service.duration}
                                 </span>
                                 {service.isReflexology && (
@@ -200,15 +200,15 @@ useEffect(() => {
                         </div>
                         <div className="flex items-end justify-between relative pt-8 border-t border-[#174652]">
                             <div>
-                                <span className="block text-xs text-sage-400 uppercase tracking-wider mb-1">Preis</span>
-                                <span className="text-2xl text-sage-800 dark:text-sage-200">
+                                <span className="block text-xs hero-color uppercase tracking-wider mb-1">Preis</span>
+                                <span className="text-2xl hero-color">
                                     CHF {service.priceRange || service.price}
                                 </span>
                             </div>
                             <div className="flex gap-3">
                                 <button 
                                     onClick={() => openServiceModal(service)}
-                                    className="px-6 py-3 rounded-full border border-sage-700 hero-color hover:bg-sage-800 transition-colors text-sm font-medium"
+                                    className="px-6 py-3 rounded-full border border-sage-700 hero-color hover:bg-[#174652] hover:text-sage-100 transition-colors text-sm font-medium"
                                 >
                                     Details
                                 </button>
