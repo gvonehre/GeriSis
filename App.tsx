@@ -91,13 +91,13 @@ useEffect(() => {
   };
 
   return (
-    <div className="min-h-screen selection:bg-rose-200 selection:text-rose-900 dark:selection:bg-rose-800 dark:selection:text-rose-100 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/iStock-1564622193_extended.jpg')" }}>
+    <div className="min-h-screen selection:bg-rose-200 selection:text-rose-900 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/iStock-1564622193_extended.jpg')" }}>
       
       
 {/* Navigation - verschwindet beim Scrollen */}
 <nav className={`fixed top-0 w-full z-40 transition-all duration-500 ${isScrolled ? '-translate-y-full' : 'translate-y-0'}`}>
   <div className="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
-    <div className="sans-serif font-light text-2xl tracking-widest text-sage-900 dark:text-sage-100">
+    <div className="sans-serif font-light text-2xl tracking-widest text-sage-900">
       
     </div>
 
@@ -182,19 +182,19 @@ useEffect(() => {
                         
                         <div className="relative">
                             <div className="flex justify-between items-start mb-6">
-                                <h3 className="text-3xl text-sage-900 dark:text-sage-100 pr-4">{service.title}</h3>
+                                <h3 className="text-3xl hero-color pr-4">{service.title}</h3>
                             </div>
                             <div className="flex gap-3 mb-8">
-                                <span className="inline-block px-3 py-1 rounded-full bg-sand-100 dark:bg-sage-800 text-xs font-medium tracking-wide text-sage-600 dark:text-sage-300">
+                                <span className="inline-block px-3 py-1 rounded-full bg-sage-800 text-xs font-medium tracking-wide text-sage-300">
                                     {service.duration}
                                 </span>
                                 {service.isReflexology && (
-                                    <span className="inline-block px-3 py-1 rounded-full bg-rose-50 dark:bg-rose-900/30 text-xs font-medium tracking-wide text-rose-700 dark:text-rose-200">
+                                    <span className="inline-block px-3 py-1 hero-color rounded-full bg-rose-900/30 text-xs font-medium tracking-wide text-rose-200">
                                         Krankenkasse
                                     </span>
                                 )}
                             </div>
-                            <p className="text-sage-600 mb-8 leading-relaxed text-lg font-light">
+                            <p className="hero-color mb-8 leading-relaxed text-lg font-light">
                                 {service.description}
                             </p>
                         </div>
@@ -208,7 +208,7 @@ useEffect(() => {
                             <div className="flex gap-3">
                                 <button 
                                     onClick={() => openServiceModal(service)}
-                                    className="px-6 py-3 rounded-full border border-sage-200 dark:border-sage-700 text-sage-600 dark:text-sage-300 hover:bg-sage-50 dark:hover:bg-sage-800 transition-colors text-sm font-medium"
+                                    className="px-6 py-3 rounded-full border border-sage-700 hero-color hover:bg-sage-800 transition-colors text-sm font-medium"
                                 >
                                     Details
                                 </button>
