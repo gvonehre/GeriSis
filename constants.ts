@@ -8,6 +8,39 @@ import { Service, Article, FaqItem } from './types';
 
 export const SERVICES: Service[] = [
   {
+    id: 'neuro',
+    title: 'Neurosomatische Körperarbeit',
+    duration: '60 – 120 Min.',
+    price: 120,
+    description: 'Tiefenentspannung und Neuausrichtung des Nervensystems durch sanfte Impulse.',
+    longDescription: `Aus Erfahrungen lernen wir und besonders die Erfahrungen aus unserer frühen Kindheit prägen uns für das gesamte Leben. Je nachdem, ob diese in Sicherheit oder Unsicherheit gemacht werden konnten, werden sie unterschiedlich im Körper abgespeichert und haben Auswirkungen auf unseren Körper, unsere Empfindungen und unser Erleben bis ins Erwachsenenalter. Das vegetative Nervensystem, welches grundlegende Lebensfunktionen unseres Körpers steuert, spielt hierbei eine entscheidende Rolle für unser körperliches und psychisches Wohlbefinden.
+
+In der neurosomatischen Körperarbeit beobachten wir aufmerksam die Reaktionen deines Körpers. Dadurch verstehen wir, wie und warum sich bestimmte Reaktionen entwickelt haben, ohne dass wir in die zugrunde liegende Geschichte eintauchen müssen. Durch eine würdevolle Begleitung auf Augenhöhe, gezielte Körperübungen und achtsame Berührung wird das Nervensystem in einen optimalen Zustand versetzt, wodurch die natürliche Fähigkeit zur Selbstregulation gestärkt wird. Auf körperlicher Ebene führt dies zu einem gesteigerten Gefühl von Sicherheit und Verbundenheit. Diese positiven Effekte unterstützen uns in herausfordernden Situationen, indem sie uns mehr Stabilität, Zentriertheit und die Fähigkeit zur Abgrenzung verleihen. Dadurch sind wir in der Lage, mit mehr Gelassenheit und Klarheit zu reagieren.
+
+Ziel der Begleitung ist es, die Selbstregulation zu stärken und dadurch Selbstermächtigung zu fördern. Dies ermöglicht es uns, souveräner und selbstbewusster mit den Herausforderungen des Alltags umzugehen und insgesamt ausgeglichener und erfüllter durchs Leben zu gehen.
+
+Dieser Ansatz kommt aus der neurosomatischen Traumaintegration – NSTI® von Stéphanie Maurer und vereint Körperarbeit, Neurowissenschaft, Entwicklungspsychologie und Körperpsychotherapie sowie biodynamische Craniosacral-Therapie.
+
+Die neurosomatische Körperarbeit unterstützt dich unter anderem bei:
+
+• Chronischen Schmerzen und Verspannungen
+• Innerer Unruhe
+• Stimmungsschwankungen
+• Ängsten
+• Selbstzweifel
+• Schlafstörungen
+• Gedankenkarussell
+• Gefühl der Einsamkeit / Sinnlosigkeit
+`,
+    images: [
+      // 'https://images.unsplash.com/photo-1598901963450-813d66667971?q=80&w=1200&auto=format&fit=crop', // Back massage
+      // 'https://images.unsplash.com/photo-1579126038374-6064e9370f0f?q=80&w=1200&auto=format&fit=crop', // Gentle touch
+      // 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=1200&auto=format&fit=crop'  // Natural light
+      '/20230509_GVE_057.jpg',
+      '/20230509_GVE_062.jpg'
+    ]
+  },
+  {
     id: 'reflex',
     title: 'Fussreflexzonen-Therapie',
     duration: '60 – 90 Min.',
@@ -15,7 +48,26 @@ export const SERVICES: Service[] = [
     priceRange: '120 – 150',
     isReflexology: true,
     description: 'Aktivierung der Selbstheilungskräfte durch gezielte Druckmassage an den Füssen.',
-    longDescription: 'Die Fussreflexzonen-Therapie basiert auf der Vorstellung, dass der Fuss ein verkleinertes Abbild des gesamten Menschen ist. Durch gezielte Druckimpulse am Fuss können korrespondierende Körperbereiche und Organe stimuliert und harmonisiert werden. \n\nDie Erstbehandlung beinhaltet eine ausführliche Anamnese und dauert ca. 75 Minuten. Folgebehandlungen dienen der gezielten Therapie und dauern in der Regel 60 Minuten.',
+    longDescription: ` Die Fußreflexzonenmassage ist ein ganzheitlicher Therapieansatz, der auf Jahrtausende altem Wissen basiert. In den Füßen spiegelt sich der gesamte menschliche Körper wider, was bedeutet, dass jedes Organ und System im Fuß repräsentiert ist. Die gezielte Berührung der Füße hat eine starke Wirkung auf das vegetative Nervensystem und führt zu tiefer Entspannung und innerer Ruhe.   
+    
+    Durch verschiedene Techniken wie Streichungen, Druck und Haltepositionen wird auf die Organe, das Lymphsystem, die Muskeln und das gesamte Körpersystem eingewirkt. Diese Behandlung fördert das innere Gleichgewicht und aktiviert die Selbstheilungskräfte des Körpers. Dadurch können sowohl akute Beschwerden als auch chronische Erkrankungen gezielt behandelt werden.
+    
+    Die Fußreflexzonenmassage nutzt die Reflexzonen der Füße, um den Körper ganzheitlich zu unterstützen und Heilungsprozesse anzuregen. Sie stellt nicht nur das körperliche Wohlbefinden wieder her, sondern trägt auch zur emotionalen und mentalen Ausgeglichenheit bei, indem sie eine tiefe, wohltuende Entspannung ermöglicht.
+    
+    Die Fussreflexzonenmassage unterstützt den Körper unter anderem bei:
+​
+    • Schmerzen und Verspannungen
+    • Verdauungsbeschwerden
+    • Schlafstörungen
+    • Kreislauf- / Durchblutungsstörungen
+    • Kopfschmerzen / Migräne
+    • Blasenentzündungen
+    • Erkältungen
+    • Menstruationsbeschwerden / Zyklusstörungen
+    • Allergien
+    • Erschöpfungszuständen
+    • Unruhe / Stress
+    `,
     images: [
       // 'https://images.unsplash.com/photo-1519415387722-a1c3bbef716c?q=80&w=1200&auto=format&fit=crop', // Feet/Relax
       // 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=1200&auto=format&fit=crop', // Massage
@@ -23,21 +75,6 @@ export const SERVICES: Service[] = [
       '/20230509_GVE_031.jpg',
       '/20230509_GVE_011.jpg'
       
-    ]
-  },
-  {
-    id: 'neuro',
-    title: 'Neurosomatische Körperarbeit',
-    duration: '60 – 120 Min.',
-    price: 120,
-    description: 'Tiefenentspannung und Neuausrichtung des Nervensystems durch sanfte Impulse.',
-    longDescription: 'Die Neurosomatische Integration® ist eine sanfte, aber tiefgreifende Methode zur Regulation des Nervensystems. Durch achtsame Berührung und gezielte Impulse wird dem Körper geholfen, Stressmuster loszulassen und in einen Zustand der Sicherheit und Entspannung zurückzufinden. Besonders geeignet bei chronischen Schmerzen, Erschöpfung und innerer Unruhe.',
-    images: [
-      // 'https://images.unsplash.com/photo-1598901963450-813d66667971?q=80&w=1200&auto=format&fit=crop', // Back massage
-      // 'https://images.unsplash.com/photo-1579126038374-6064e9370f0f?q=80&w=1200&auto=format&fit=crop', // Gentle touch
-      // 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=1200&auto=format&fit=crop'  // Natural light
-      '/20230509_GVE_057.jpg',
-      '/20230509_GVE_062.jpg'
     ]
   }
 ];

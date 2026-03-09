@@ -313,7 +313,7 @@ useEffect(() => {
                     <li><a href="#" className="hover:text-white transition-colors">AGB</a></li>
                  </ul> */}
                  <div className="mt-8">
-                     <Button onClick={() => openBooking()} variant="accent" className="w-full">Termin Buchen</Button>
+                     <Button onClick={() => window.open("https://calendar.app.google/pXGyFkn9dMtQRvnQA", "_blank", "noopener,noreferrer")} variant="accent" className="w-full">Termin Buchen</Button>
                  </div>
             </div>
          </div>
