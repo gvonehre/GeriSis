@@ -282,39 +282,26 @@ Mit Präsenz und Ruhe begleite ich dich wertschätzend, herzlich und klar. Zusam
       </section>
 
       {/* Footer / Contact */}
-      <footer id="contact" className="bg-sage-900 text-sage-200 pt-32 pb-12 px-6">
-         <div className="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-16 mb-24">
-            <div className="space-y-8">
-                <span className="text-3xl font-light tracking-wide text-white">BEWEGTE STILLE</span>
-                <p className="text-sage-400 font-light max-w-xs leading-relaxed">
-                    Ein Ort der Ruhe und Regeneration im Herzen von Luzern.
-                </p>
-            </div>
-            
-            <div className="lg:col-start-3">
-                <h4 className="text-xs font-bold uppercase tracking-widest text-sage-500 mb-8">Kontakt</h4>
-                <ul className="space-y-6 text-sage-300 font-light">
+      <footer id="contact" className="hero-color pt-32 pb-12 px-6 text-center">
+         <div className="mx-auto gap-16 mb-14 text-center">
+                <h4 className="uppercase tracking-widest mb-14">Kontakt</h4>
+                <ul className="font-light flex flex-col items-center">
                     {/* NAME */}
-                    <li className="flex items-start gap-4">
-                      <span className="w-5" /> 
-                      <span className="font-medium text-sage-100">
+                    <li className="flex gap-4">
+                      <span className="font-medium">
                         {CONTACT_INFO.name}
                       </span>
                     </li>
                     <li className="flex items-start gap-4">
-                        <MapPin size={20} className="shrink-0 text-rose-400"/>
                         <span className="leading-relaxed">{CONTACT_INFO.address}</span>
                     </li>
                     <li className="flex items-center gap-4">
-                        <Mail size={20} className="shrink-0 text-rose-400"/>
                         <a href={`mailto:${CONTACT_INFO.email}`} className="hover:text-white transition-colors">{CONTACT_INFO.email}</a>
                     </li>
                     <li className="flex items-center gap-4">
-                        <Phone size={20} className="shrink-0 text-rose-400"/>
                         <a href={`tel:${CONTACT_INFO.phone}`} className="hover:text-white transition-colors">{CONTACT_INFO.phone}</a>
                     </li>
                 </ul>
-            </div>
 
             <div>
                  {/* <h4 className="text-xs font-bold uppercase tracking-widest text-sage-500 mb-8">Rechtliches</h4>
@@ -324,7 +311,7 @@ Mit Präsenz und Ruhe begleite ich dich wertschätzend, herzlich und klar. Zusam
                     <li><a href="#" className="hover:text-white transition-colors">AGB</a></li>
                  </ul> */}
                  <div className="mt-8">
-                     <Button onClick={() => window.open("https://calendar.app.google/pXGyFkn9dMtQRvnQA", "_blank", "noopener,noreferrer")} variant="accent" className="w-full">Termin Buchen</Button>
+                     <Button onClick={() => window.open("https://calendar.app.google/pXGyFkn9dMtQRvnQA", "_blank", "noopener,noreferrer")} variant="accent">Termin Buchen</Button>
                  </div>
             </div>
          </div>
@@ -333,7 +320,7 @@ Mit Präsenz und Ruhe begleite ich dich wertschätzend, herzlich und klar. Zusam
             Demo build by P. Heiniger Design (Andermatt) — design@pascalheiniger.ch
          </p> */}
 
-         <div className="max-w-7xl mx-auto border-t border-sage-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-sage-600 uppercase tracking-widest">
+         <div className="max-w-7xl mx-auto pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs uppercase tracking-widest">
             <p>&copy; {new Date().getFullYear()} Bewegte Stille.</p>
             {/* <p className="flex items-center gap-2">
               <span>Designed by</span>
