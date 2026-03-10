@@ -10,7 +10,7 @@ import { CONTACT_INFO } from '../constants';
 
 export function Datenschutz() {
   return (
-    <div className="min-h-screen bg-[#F6E6D2] text-[#174652]">
+    <div className="min-h-screen text-[#174652] bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/iStock-1564622193.jpg')" }}>
       <div className="max-w-2xl mx-auto px-6 py-20">
 
         <Link
@@ -21,12 +21,9 @@ export function Datenschutz() {
           Zurück
         </Link>
 
-        <h1 className="text-4xl font-light tracking-wide mb-4">Datenschutzerklärung</h1>
-        <p className="text-sm font-light opacity-60 mb-16">
-          Gemäss Schweizer Datenschutzgesetz (DSG / nDSG)
-        </p>
+        <h1 className="text-4xl font-light tracking-wide mb-4">Datenschutz</h1>
 
-        <section className="mb-12">
+{/*         <section className="mb-12">
           <h2 className="text-xs font-medium uppercase tracking-widest mb-4 opacity-60">
             1. Verantwortliche Stelle
           </h2>
@@ -37,134 +34,99 @@ export function Datenschutz() {
               {CONTACT_INFO.email}
             </a>
           </p>
-        </section>
+        </section> */}
 
         <section className="mb-12">
           <h2 className="text-xs font-medium uppercase tracking-widest mb-4 opacity-60">
-            2. Welche Personendaten werden bearbeitet
+            Allgemeiner Hinweis
           </h2>
           <p className="font-light leading-relaxed text-sm">
-            Beim Besuch dieser Website werden automatisch technische Daten erhoben
-            (IP-Adresse, Browser, Betriebssystem, Referrer-URL, Datum und Uhrzeit des Zugriffs).
-            Diese Daten werden ausschliesslich zur Sicherstellung des Betriebs der Website
-            verwendet und nicht mit anderen Daten verknüpft.
-          </p>
-          <p className="font-light leading-relaxed text-sm mt-4">
-            Wenn Sie über das Buchungssystem (Google Calendar) einen Termin vereinbaren oder
-            per E-Mail Kontakt aufnehmen, werden die von Ihnen freiwillig angegebenen Daten
-            (Name, E-Mail-Adresse, Telefonnummer, Anliegen) zur Terminorganisation und
-            Kommunikation verwendet.
+            Gestützt auf Artikel 13 der schweizerischen Bundesverfassung und den datenschutzrechtlichen Bestimmungen des Bundes (Datenschutzgesetz, DSG) hat jede Person Anspruch auf Schutz ihrer Privatsphäre sowie auf Schutz vor Missbrauch ihrer persönlichen Daten. Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung. In Zusammenarbeit mit unseren Hosting-Providern bemühen wir uns, die Datenbanken so gut wie möglich vor fremden Zugriffen, Verlusten, Missbrauch oder vor Fälschung zu schützen. Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich. Durch die Nutzung dieser Website erklären Sie sich mit der Erhebung, Verarbeitung und Nutzung von Daten gemäss der nachfolgenden Beschreibung einverstanden. Diese Website kann grundsätzlich ohne Registrierung besucht werden. Dabei werden Daten wie beispielsweise aufgerufene Seiten bzw. Namen der abgerufenen Datei, Datum und Uhrzeit zu statistischen Zwecken auf dem Server gespeichert, ohne dass diese Daten unmittelbar auf Ihre Person bezogen werden. Personenbezogene Daten, insbesondere Name, Adresse oder E-Mail-Adresse werden soweit möglich auf freiwilliger Basis erhoben. Ohne Ihre Einwilligung erfolgt keine Weitergabe der Daten an Dritte.
           </p>
         </section>
 
         <section className="mb-12">
           <h2 className="text-xs font-medium uppercase tracking-widest mb-4 opacity-60">
-            3. Zweck der Bearbeitung
+            Bearbeitung von Personendaten
           </h2>
           <p className="font-light leading-relaxed text-sm">
-            Personendaten werden ausschliesslich für folgende Zwecke bearbeitet:
-          </p>
-          <ul className="mt-3 space-y-2 text-sm font-light list-none">
-            <li className="flex gap-3"><span className="w-5 h-[1px] bg-[#174652] mt-3 shrink-0"></span>Terminvereinbarung und -verwaltung</li>
-            <li className="flex gap-3"><span className="w-5 h-[1px] bg-[#174652] mt-3 shrink-0"></span>Beantwortung von Anfragen</li>
-            <li className="flex gap-3"><span className="w-5 h-[1px] bg-[#174652] mt-3 shrink-0"></span>Durchführung von therapeutischen Behandlungen (inkl. gesetzlich erforderlicher Dokumentation)</li>
-            <li className="flex gap-3"><span className="w-5 h-[1px] bg-[#174652] mt-3 shrink-0"></span>Abrechnung mit Krankenkassen (ZSR-Nr. {CONTACT_INFO.zsr})</li>
-          </ul>
-        </section>
-
-        <section className="mb-12">
-          <h2 className="text-xs font-medium uppercase tracking-widest mb-4 opacity-60">
-            4. Weitergabe von Daten
-          </h2>
-          <p className="font-light leading-relaxed text-sm">
-            Personendaten werden nicht an Dritte verkauft oder vermietet. Eine Weitergabe
-            erfolgt nur, soweit dies gesetzlich erforderlich ist (z.B. Abrechnung über
-            Krankenkassen) oder Sie ausdrücklich eingewilligt haben.
-          </p>
-          <p className="font-light leading-relaxed text-sm mt-4">
-            Für die Terminbuchung wird Google Calendar (Google LLC, USA) eingesetzt.
-            Dabei gelten die Datenschutzbestimmungen von Google. Mit der Nutzung des
-            Buchungslinks stimmen Sie der Bearbeitung durch Google zu.
+            Personendaten sind alle Angaben, die sich auf eine bestimmte oder bestimmbare Person beziehen. Bearbeiten umfasst jeden Umgang mit Personendaten, unabhängig von den angewandten Mitteln und Verfahren, insbesondere das Aufbewahren, Bekanntgeben, Beschaffen, Löschen, Speichern, Verändern, Vernichten und Verwenden von Personendaten. Ihre personenbezogenen Daten geben wir ausschliesslich an Personen oder Bereichen weiter, die diese zur Erfüllung der vertraglichen und gesetzlichen Pflichten benötigen. Diese sind über die geltenden Datenschutzregeln informiert und verpflichtet diese einzuhalten.
+Soweit ihre Daten physisch gesammelt und bearbeitet werden, werden diese in einem abschliessbaren, unbefugten Drittpersonen nicht zugänglichen Raum oder Schrank aufbewahrt. Elektronische Daten werden gesichert aufbewahrt (Firewall, Passwort, etc.)Wo nicht kantonale oder andere gesetzlichen Regelungen anders bestimmen, werde ihre persönlichen Daten zehn Jahre nach ihrer letzten Konsultation gelöscht.
           </p>
         </section>
 
         <section className="mb-12">
           <h2 className="text-xs font-medium uppercase tracking-widest mb-4 opacity-60">
-            5. Cookies
+            Datenschutzerklärung von Cookies
           </h2>
           <p className="font-light leading-relaxed text-sm">
-            Diese Website verwendet ausschliesslich technisch notwendige Cookies (z.B.
-            zur Speicherung Ihrer Hell-/Dunkel-Modus-Präferenz). Es werden keine
-            Tracking- oder Marketing-Cookies eingesetzt. Eine Einwilligung ist hierfür
-            nicht erforderlich.
+            Diese Website verwendet Cookies, um bestimmte Funktionen bereitzustellen. Cookies sind kleine Textdateien, die auf Ihrem Endgerät gespeichert werden und eine Analyse der Nutzung unserer Website ermöglichen. Sie können das Speichern von Cookies in den Einstellungen Ihres Browsers deaktivieren. Cookies ermöglichen es, insbesondere Nutzungshäufigkeit und Nutzeranzahl der Seiten zu ermitteln, Verhaltensweisen der Seitennutzung zu analysieren, aber auch unser Angebot kundenfreundlicher zu gestalten. Cookies bleiben über das Ende einer Browser-Sitzung gespeichert und können bei einem erneuten Seitenbesuch wieder aufgerufen werden. Wenn Sie das nicht wünschen, sollten Sie Ihren Internetbrowser so einstellen, dass er die Annahme von Cookies verweigert.
           </p>
         </section>
 
         <section className="mb-12">
           <h2 className="text-xs font-medium uppercase tracking-widest mb-4 opacity-60">
-            6. Hosting
+            Datenschutzerklärung für Kontaktformular
           </h2>
           <p className="font-light leading-relaxed text-sm">
-            Diese Website wird bei einem Hosting-Anbieter betrieben. Dabei werden
-            technische Zugriffsdaten (Server-Logs) gespeichert, die für den Betrieb
-            notwendig sind und nach spätestens 30 Tagen gelöscht werden.
+            Wenn Sie über unser Kontaktformular mit uns in Verbindung treten, werden die von Ihnen angegebenen Daten (Name, E-Mail-Adresse) zur Bearbeitung Ihrer Anfrage verwendet. Diese Daten werden nicht ohne Ihre Einwilligung an Dritte weitergegeben.
           </p>
         </section>
 
         <section className="mb-12">
           <h2 className="text-xs font-medium uppercase tracking-widest mb-4 opacity-60">
-            7. Aufbewahrungsdauer
+            Datenschutzerklärung für Instagramm und Facebook
           </h2>
           <p className="font-light leading-relaxed text-sm">
-            Personendaten werden nur so lange aufbewahrt, wie es für den jeweiligen
-            Zweck erforderlich ist oder gesetzliche Aufbewahrungspflichten bestehen
-            (z.B. 10 Jahre für Buchhaltungsunterlagen gemäss OR Art. 958f).
-            Behandlungsdokumentation wird gemäss den berufsrechtlichen Vorgaben aufbewahrt.
+            Unsere Website kann Funktionen von Instagram und Facebook integrieren, z.B. das Anzeigen von Inhalten oder das Teilen von Inhalten auf Instagram und oder Facebook. Durch die Nutzung dieser Funktionen können Daten an Instagram bzw. Facebook übertragen werden. Wir haben keinen Einfluss auf den Umfang der Daten, die Instagram oder Facebook erhebt und verarbeitet.  Wenn Sie keine Zuordnung dieser Daten zu Ihrem Instagramm- oder Facebook-Account wünschen, loggen Sie sich bitte vor dem Besuch unserer Seite bei der Plattform aus. Interaktionen, insbesondere das Nutzen einer Kommentarfunktion oder das Anklicken eines „Like“- oder „Teilen“-Buttons werden ebenfalls an instagramm und Facebook weitergegeben. Weitere Informationen hierzu finden Sie in der Datenschutzerklärung von
           </p>
-        </section>
-
-        <section className="mb-12">
-          <h2 className="text-xs font-medium uppercase tracking-widest mb-4 opacity-60">
-            8. Ihre Rechte
-          </h2>
           <p className="font-light leading-relaxed text-sm">
-            Sie haben nach dem Schweizer DSG das Recht auf:
-          </p>
-          <ul className="mt-3 space-y-2 text-sm font-light">
-            <li className="flex gap-3"><span className="w-5 h-[1px] bg-[#174652] mt-3 shrink-0"></span>Auskunft über die zu Ihrer Person gespeicherten Daten</li>
-            <li className="flex gap-3"><span className="w-5 h-[1px] bg-[#174652] mt-3 shrink-0"></span>Berichtigung unrichtiger Daten</li>
-            <li className="flex gap-3"><span className="w-5 h-[1px] bg-[#174652] mt-3 shrink-0"></span>Löschung Ihrer Daten, soweit keine gesetzlichen Aufbewahrungspflichten entgegenstehen</li>
-            <li className="flex gap-3"><span className="w-5 h-[1px] bg-[#174652] mt-3 shrink-0"></span>Widerspruch gegen die Bearbeitung</li>
-          </ul>
-          <p className="font-light leading-relaxed text-sm mt-4">
-            Für die Ausübung Ihrer Rechte wenden Sie sich an:{' '}
-            <a href={`mailto:${CONTACT_INFO.email}`} className="underline underline-offset-4">
-              {CONTACT_INFO.email}
-            </a>
-          </p>
-        </section>
-
-        <section className="mb-12">
-          <h2 className="text-xs font-medium uppercase tracking-widest mb-4 opacity-60">
-            9. Beschwerderecht
-          </h2>
-          <p className="font-light leading-relaxed text-sm">
-            Bei datenschutzrechtlichen Anliegen haben Sie das Recht, beim Eidgenössischen
-            Datenschutz- und Öffentlichkeitsbeauftragten (EDÖB) Beschwerde einzureichen:{' '}
-            <a
-              href="https://www.edoeb.admin.ch"
+            Instagram:{" "}
+            <a href="http://instagram.com/about/legal/privacy/"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline underline-offset-4"
-            >
-              www.edoeb.admin.ch
+              className="hover:text-gray-600">
+              http://instagram.com/about/legal/privacy/
             </a>
+          </p>
+          <p className="font-light leading-relaxed text-sm">
+            Facebook:{" "}
+            <a href="https://de-de.facebook.com/about/privacy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-gray-600">
+              https://de-de.facebook.com/about/privacy.
+            </a>
+          </p>
+
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-xs font-medium uppercase tracking-widest mb-4 opacity-60">
+            Nutzung von Google Maps-Funktion
+          </h2>
+          <p className="font-light leading-relaxed text-sm">
+            Unsere Website kann Funktionen von Google Maps integrieren, z.B. das Anzeigen von Karten oder das Berechnen von Routen. Durch die Nutzung dieser Funktionen können Daten an Google übertragen werden. Wir haben keinen Einfluss auf den Umfang der Daten, die Google erhebt und verarbeitet. Weitere Informationen hierzu finden Sie in der Datenschutzerklärung von Google.
           </p>
         </section>
 
-        <p className="text-xs opacity-40 uppercase tracking-widest mt-16">
-          Stand: {new Date().toLocaleDateString('de-CH', { year: 'numeric', month: 'long' })}
-        </p>
+        <section className="mb-12">
+          <h2 className="text-xs font-medium uppercase tracking-widest mb-4 opacity-60">
+            Datensicherheit
+          </h2>
+          <p className="font-light leading-relaxed text-sm">
+            Wir treffen technische und organisatorische Maßnahmen, um Ihre Daten vor Verlust, Manipulation oder unberechtigtem Zugriff zu schützen. Unsere Sicherheitsmaßnahmen werden entsprechend der technologischen Entwicklung fortlaufend verbessert.
+          </p>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-xs font-medium uppercase tracking-widest mb-4 opacity-60">
+            Auskunftsrecht
+          </h2>
+          <p className="font-light leading-relaxed text-sm">
+            Sie haben das Recht, jederzeit und unentgeltlich Auskunft oder eine Kopie über die von uns gespeicherten personenbezogenen Daten zu erhalten. Bei Bedarf können Sie auch eine Berichtigung, Sperrung oder Löschung dieser Daten verlangen. Wenn Sie von diesem Auskunftsrecht Gebrauch machen möchten, können Sie sich jederzeit an unseren Datenschutzbeauftragten wenden.
+          </p>
+        </section>
       </div>
     </div>
   );

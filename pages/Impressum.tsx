@@ -10,7 +10,7 @@ import { CONTACT_INFO } from '../constants';
 
 export function Impressum() {
   return (
-    <div className="min-h-screen bg-[#F6E6D2] text-[#174652]">
+    <div className="min-h-screen text-[#174652] bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/iStock-1564622193.jpg')" }}>
       <div className="max-w-2xl mx-auto px-6 py-20">
 
         <Link
@@ -25,13 +25,13 @@ export function Impressum() {
 
         <section className="mb-12">
           <h2 className="text-xs font-medium uppercase tracking-widest mb-4 opacity-60">
-            Betreiberin dieser Website
+            Verantwortlich für den Inhalt dieser Seite:
           </h2>
-          <p className="text-lg font-light leading-relaxed">
+          <p className="font-light leading-relaxed">
             {CONTACT_INFO.name}<br />
             {CONTACT_INFO.address}
           </p>
-          <p className="mt-4 font-light leading-relaxed">
+          <p className="font-light leading-relaxed">
             E-Mail:{' '}
             <a href={`mailto:${CONTACT_INFO.email}`} className="underline underline-offset-4">
               {CONTACT_INFO.email}
@@ -44,7 +44,7 @@ export function Impressum() {
           </p>
         </section>
 
-        <section className="mb-12">
+        {/* <section className="mb-12">
           <h2 className="text-xs font-medium uppercase tracking-widest mb-4 opacity-60">
             Berufsbezeichnung & Zulassung
           </h2>
@@ -53,9 +53,9 @@ export function Impressum() {
             Neurosomatische Traumaintegration NSTI® Practitioner i.A.<br />
             ZSR-Nummer: {CONTACT_INFO.zsr}
           </p>
-        </section>
+        </section> */}
 
-        <section className="mb-12">
+        {/* <section className="mb-12">
           <h2 className="text-xs font-medium uppercase tracking-widest mb-4 opacity-60">
             Haftungsausschluss
           </h2>
@@ -67,21 +67,27 @@ export function Impressum() {
             entstanden sind, werden ausgeschlossen, sofern kein nachweislich vorsätzliches oder
             grob fahrlässiges Verschulden vorliegt.
           </p>
-        </section>
+        </section> */}
 
         <section className="mb-12">
           <h2 className="text-xs font-medium uppercase tracking-widest mb-4 opacity-60">
-            Urheberrecht
+            Urheberrecht:
           </h2>
           <p className="font-light leading-relaxed text-sm">
-            Die Inhalte und Werke auf diesen Seiten unterliegen dem Schweizer Urheberrecht.
-            Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung
-            ausserhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung
-            der Autorin.
+            Die Inhalte auf unserer Website, einschließlich Texte, Bilder, Grafiken, Logos und Videos, sind urheberrechtlich geschützt und gehören entweder uns oder den jeweiligen Urheberrechtsinhabern. Eine Vervielfältigung, Bearbeitung, Verbreitung oder jede andere Art der Nutzung dieser Inhalte bedarf unserer oder der Zustimmung des jeweiligen Urheberrechtsinhabers. Wer ohne Zustimmung der jeweiligen Urheberrechtsinhaber eine Urheberrechtsverletzung begeht, kann sich strafbar machen und unter Umständen Schadenersatzansprüche geltend machen.
           </p>
         </section>
 
         <section className="mb-12">
+          <h2 className="text-xs font-medium uppercase tracking-widest mb-4 opacity-60">
+            Allgemeiner Haftungsausschluss:
+          </h2>
+          <p className="font-light leading-relaxed text-sm">
+            Alle Angaben unseres Internetangebotes wurden sorgfältig geprüft. Wir bemühen uns, unser Informationsangebot aktuell, inhaltlich richtig und vollständig anzubieten. Trotzdem kann das Auftreten von Fehlern nicht völlig ausgeschlossen werden, womit wir keine Garantie für Vollständigkeit, Richtigkeit und Aktualität von Informationen auch journalistisch-redaktioneller Art übernehmen können. Wir übernehmen keine Haftung für Schäden materieller oder ideeller Art, die durch die Nutzung der Inhalte auf unserer Website entstehen. Sie sind allein verantwortlich für Ihre Handlungen im Zusammenhang mit der Nutzung der Inhalte und müssen sicherstellen, dass Sie alle geltenden Gesetze und Bestimmungen einhalten. Der Herausgeber kann nach eigenem Ermessen und ohne Ankündigung Texte verändern oder löschen und ist nicht verpflichtet, Inhalte dieser Website zu aktualisieren. Der Herausgeber übernimmt auch keine Verantwortung oder Haftung für den Inhalt und die Verfügbarkeit von Websites Dritter, die über externe Links von dieser Website aus erreicht werden können. Für den Inhalt der verlinkten Seiten sind ausschliesslich deren Betreiber verantwortlich. Der Herausgeber distanziert sich daher ausdrücklich von allen fremden Inhalten, die möglicherweise straf- oder haftungsrechtlich relevant sind oder gegen die guten Sitten verstossen.
+          </p>
+        </section>
+
+{/*         <section className="mb-12">
           <h2 className="text-xs font-medium uppercase tracking-widest mb-4 opacity-60">
             Webdesign & Umsetzung
           </h2>
@@ -91,11 +97,14 @@ export function Impressum() {
               design@pascalheiniger.ch
             </a>
           </p>
-        </section>
+        </section> */}
 
-        <p className="text-xs opacity-40 uppercase tracking-widest mt-16">
-          Stand: {new Date().toLocaleDateString('de-CH', { year: 'numeric', month: 'long' })}
+        <p className="text-xs opacity-40 tracking-widest mt-16">
+          ©2024 von bewegte stille.  Webdesign by Gina De Rosa.
         </p>
+  {/*       <p className="text-xs opacity-40 uppercase tracking-widest mt-16">
+          Stand: {new Date().toLocaleDateString('de-CH', { year: 'numeric', month: 'long' })}
+        </p> */}
       </div>
     </div>
   );
