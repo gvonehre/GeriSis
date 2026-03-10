@@ -284,7 +284,7 @@ Mit Präsenz und Ruhe begleite ich dich wertschätzend, herzlich und klar. Zusam
       {/* Footer / Contact */}
       <footer id="contact" className="hero-color pt-32 pb-12 px-6 text-center">
          <div className="mx-auto gap-16 mb-14 text-center">
-                <h4 className="uppercase tracking-widest mb-14">Kontakt</h4>
+                <h4 className="text-2xl font-light uppercase tracking-widest mb-14">Kontakt</h4>
                 <ul className="font-light flex flex-col items-center">
                     {/* NAME */}
                     <li className="flex gap-4">
@@ -307,6 +307,14 @@ Mit Präsenz und Ruhe begleite ich dich wertschätzend, herzlich und klar. Zusam
                  <div className="mt-8">
                      <Button onClick={() => window.open("https://calendar.app.google/pXGyFkn9dMtQRvnQA", "_blank", "noopener,noreferrer")} variant="accent">Termin Buchen</Button>
                  </div>
+            </div>
+            <div className="flex mt-8 justify-center gap-6 text-sm font-light">
+              <a href="/impressum" className="hover:opacity-70 transition-opacity">
+                Impressum
+              </a>
+              <a href="/datenschutz" className="hover:opacity-70 transition-opacity">
+                Datenschutz
+              </a>
             </div>
          </div>
 
