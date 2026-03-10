@@ -1,12 +1,14 @@
 // -----------------------------------------------------------------------------
 // File: index.tsx
 // Purpose: React application entry point and root mounting.
-// PHD: P. Heiniger Design — Practical creative solutions from Andermatt. (design@pascalheiniger.ch)
 // -----------------------------------------------------------------------------
 
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import App from './App';
+import { Impressum } from './pages/Impressum';
+import { Datenschutz } from './pages/Datenschutz';
 import './index.css';
 
 const rootElement = document.getElementById('root');
@@ -17,6 +19,12 @@ if (!rootElement) {
 const root = ReactDOM.createRoot(rootElement);
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/impressum" element={<Impressum />} />
+        <Route path="/datenschutz" element={<Datenschutz />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
