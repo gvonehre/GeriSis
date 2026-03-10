@@ -12,6 +12,7 @@ export interface Service {
   priceRange?: string; // Display string e.g. "120 – 150"
   description: string;
   longDescription?: string;
+  benefits?: string;
   images?: string[]; // URLs
   isReflexology?: boolean; // Flag to handle dynamic first-session logic
 }

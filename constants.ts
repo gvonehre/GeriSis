@@ -1,7 +1,6 @@
 // -----------------------------------------------------------------------------
 // File: constants.ts
 // Purpose: Content/data constants used across page sections and contact blocks.
-// PHD: P. Heiniger Design — Practical creative solutions from Andermatt. (design@pascalheiniger.ch)
 // -----------------------------------------------------------------------------
 
 import { Service, Article, FaqItem } from './types';
@@ -20,8 +19,8 @@ In der neurosomatischen Körperarbeit beobachten wir aufmerksam die Reaktionen d
 Ziel der Begleitung ist es, die Selbstregulation zu stärken und dadurch Selbstermächtigung zu fördern. Dies ermöglicht es uns, souveräner und selbstbewusster mit den Herausforderungen des Alltags umzugehen und insgesamt ausgeglichener und erfüllter durchs Leben zu gehen.
 
 Dieser Ansatz kommt aus der neurosomatischen Traumaintegration – NSTI® von Stéphanie Maurer und vereint Körperarbeit, Neurowissenschaft, Entwicklungspsychologie und Körperpsychotherapie sowie biodynamische Craniosacral-Therapie.
-
-Die neurosomatische Körperarbeit unterstützt dich unter anderem bei:
+`,
+    benefits: `Die neurosomatische Körperarbeit unterstützt dich unter anderem bei:
 
 • Chronischen Schmerzen und Verspannungen
 • Innerer Unruhe
@@ -53,8 +52,8 @@ Die neurosomatische Körperarbeit unterstützt dich unter anderem bei:
     Durch verschiedene Techniken wie Streichungen, Druck und Haltepositionen wird auf die Organe, das Lymphsystem, die Muskeln und das gesamte Körpersystem eingewirkt. Diese Behandlung fördert das innere Gleichgewicht und aktiviert die Selbstheilungskräfte des Körpers. Dadurch können sowohl akute Beschwerden als auch chronische Erkrankungen gezielt behandelt werden.
     
     Die Fußreflexzonenmassage nutzt die Reflexzonen der Füße, um den Körper ganzheitlich zu unterstützen und Heilungsprozesse anzuregen. Sie stellt nicht nur das körperliche Wohlbefinden wieder her, sondern trägt auch zur emotionalen und mentalen Ausgeglichenheit bei, indem sie eine tiefe, wohltuende Entspannung ermöglicht.
-    
-    Die Fussreflexzonenmassage unterstützt den Körper unter anderem bei:
+    `,
+    benefits:`Die Fussreflexzonenmassage unterstützt den Körper unter anderem bei:
 ​
     • Schmerzen und Verspannungen
     • Verdauungsbeschwerden

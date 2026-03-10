@@ -55,8 +55,12 @@ export const ServiceModal: React.FC<ServiceModalProps> = ({ service, isOpen, onC
                 <div className="prose prose-sage dark:prose-invert max-w-none text-lg hero-color font-light leading-relaxed whitespace-pre-line">
                     {service.longDescription || service.description}
                 </div>
+                <div className="pt-8 flex flex-col sm:flex-row gap-2 border-t border-[#174652]"></div>
+                <div className="prose prose-sage dark:prose-invert max-w-none text-lg hero-color font-light leading-relaxed whitespace-pre-line">
+                    {service.benefits || service.benefits}
+                </div>
 
-                <div className="pt-8 flex flex-col sm:flex-row gap-4 border-t border-[#174652]">
+                <div>
                     <Button onClick={() => window.open("https://calendar.app.google/pXGyFkn9dMtQRvnQA", "_blank", "noopener,noreferrer")} variant="accent" size="lg" className="w-full sm:w-auto shadow-xl shadow-rose-200/50">
                         Termin vereinbaren
                     </Button>

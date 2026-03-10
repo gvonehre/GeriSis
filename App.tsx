@@ -304,28 +304,14 @@ Mit Präsenz und Ruhe begleite ich dich wertschätzend, herzlich und klar. Zusam
                 </ul>
 
             <div>
-                 {/* <h4 className="text-xs font-bold uppercase tracking-widest text-sage-500 mb-8">Rechtliches</h4>
-                 <ul className="space-y-4 text-sage-400 text-sm font-light">
-                    <li><a href="#" className="hover:text-white transition-colors">Impressum</a></li>
-                    <li><a href="#" className="hover:text-white transition-colors">Datenschutz</a></li>
-                    <li><a href="#" className="hover:text-white transition-colors">AGB</a></li>
-                 </ul> */}
                  <div className="mt-8">
                      <Button onClick={() => window.open("https://calendar.app.google/pXGyFkn9dMtQRvnQA", "_blank", "noopener,noreferrer")} variant="accent">Termin Buchen</Button>
                  </div>
             </div>
          </div>
-         
-        {/*  <p className="max-w-7xl mx-auto mb-6 text-[11px] text-sage-500">
-            Demo build by P. Heiniger Design (Andermatt) — design@pascalheiniger.ch
-         </p> */}
 
          <div className="max-w-7xl mx-auto pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs uppercase tracking-widest">
             <p>&copy; {new Date().getFullYear()} Bewegte Stille.</p>
-            {/* <p className="flex items-center gap-2">
-              <span>Designed by</span>
-              <span className="text-sage-400 hover:text-rose-400 transition-colors cursor-default">P. Heiniger Design</span>
-            </p> */}
          </div>
       </footer>
 
