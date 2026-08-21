@@ -229,7 +229,7 @@ useEffect(() => {
                             Ich bin gerne…
                         </p>
                         <p>
-                            Ich bin gerne…<br>
+                            Ich bin gerne…<br />
                             in Bewegung, in den Bergen, neues am Entdecken, am Lernen, mit Menschen, in der Stille.
                         </p>
                         <p>
