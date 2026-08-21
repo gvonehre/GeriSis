@@ -226,6 +226,9 @@ useEffect(() => {
                 <Reveal delay={0.3}>
                     <div className="space-y-6 text-lg font-light text-sage-950 dark:text-sage-300 leading-relaxed" style={{ color: "#174652" }}>
                         <p>
+                            Ich bin gerne…
+                        </p>
+                        <p>
                             Ich bin gerne…<br>
                             in Bewegung, in den Bergen, neues am Entdecken, am Lernen, mit Menschen, in der Stille.
                         </p>
