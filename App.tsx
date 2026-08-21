@@ -243,7 +243,7 @@ Mit Präsenz und Ruhe begleite ich dich wertschätzend, herzlich und klar. Zusam
                     <ul className="space-y-4">
                       <li className="flex items-center gap-4 text-sm uppercase tracking-wide hero-color" >
                         <span className="w-8 h-[1px] bg-[#174652]"></span> 
-                          <span>2026 PreTeacher{" "}<a href="https://institut-traumaintegration.ch" target="_blank"rel="noopener noreferrer" className="underline hover:text-gray-600">NSTI®</a> III, Institut für Traumaintegration Zürich
+                          <span>2026 PreTeacher{" "}<a href="https://institut-traumaintegration.ch" target="_blank"rel="noopener noreferrer" className="underline hover:text-gray-600">NSTI®</a> I, Institut für Traumaintegration Zürich
                           </span>
                       </li>
                       <li className="flex items-center gap-4 text-sm uppercase tracking-wide hero-color" >
