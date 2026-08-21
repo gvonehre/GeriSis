@@ -11,7 +11,7 @@ export const SERVICES: Service[] = [
     title: 'Neurosomatische Körperarbeit',
     duration: '60 – 120 Min.',
     price: 120,
-    description: 'Tiefenentspannung und Neuausrichtung des Nervensystems durch sanfte Impulse.',
+    description: 'Körperbewusstsein aufbauen.',
     longDescription: `Aus Erfahrungen lernen wir und besonders die Erfahrungen aus unserer frühen Kindheit prägen uns für das gesamte Leben. Je nachdem, ob diese in Sicherheit oder Unsicherheit gemacht werden konnten, werden sie unterschiedlich im Körper abgespeichert und haben Auswirkungen auf unseren Körper, unsere Empfindungen und unser Erleben bis ins Erwachsenenalter. Das vegetative Nervensystem, welches grundlegende Lebensfunktionen unseres Körpers steuert, spielt hierbei eine entscheidende Rolle für unser körperliches und psychisches Wohlbefinden.
 
 In der neurosomatischen Körperarbeit beobachten wir aufmerksam die Reaktionen deines Körpers. Dadurch verstehen wir, wie und warum sich bestimmte Reaktionen entwickelt haben, ohne dass wir in die zugrunde liegende Geschichte eintauchen müssen. Durch eine würdevolle Begleitung auf Augenhöhe, gezielte Körperübungen und achtsame Berührung wird das Nervensystem in einen optimalen Zustand versetzt, wodurch die natürliche Fähigkeit zur Selbstregulation gestärkt wird. Auf körperlicher Ebene führt dies zu einem gesteigerten Gefühl von Sicherheit und Verbundenheit. Diese positiven Effekte unterstützen uns in herausfordernden Situationen, indem sie uns mehr Stabilität, Zentriertheit und die Fähigkeit zur Abgrenzung verleihen. Dadurch sind wir in der Lage, mit mehr Gelassenheit und Klarheit zu reagieren.
@@ -46,7 +46,7 @@ Dieser Ansatz kommt aus der neurosomatischen Traumaintegration – NSTI® von St
     price: 120, // Base price
     priceRange: '120 – 150',
     isReflexology: true,
-    description: 'Aktivierung der Selbstheilungskräfte durch gezielte Druckmassage an den Füssen.',
+    description: 'Basis stärken.',
     longDescription: ` Die Fußreflexzonenmassage ist ein ganzheitlicher Therapieansatz, der auf Jahrtausende altem Wissen basiert. In den Füßen spiegelt sich der gesamte menschliche Körper wider, was bedeutet, dass jedes Organ und System im Fuß repräsentiert ist. Die gezielte Berührung der Füße hat eine starke Wirkung auf das vegetative Nervensystem und führt zu tiefer Entspannung und innerer Ruhe.   
     
     Durch verschiedene Techniken wie Streichungen, Druck und Haltepositionen wird auf die Organe, das Lymphsystem, die Muskeln und das gesamte Körpersystem eingewirkt. Diese Behandlung fördert das innere Gleichgewicht und aktiviert die Selbstheilungskräfte des Körpers. Dadurch können sowohl akute Beschwerden als auch chronische Erkrankungen gezielt behandelt werden.
