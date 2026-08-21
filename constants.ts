@@ -45,7 +45,7 @@ Dieser Ansatz kommt aus der neurosomatischen Traumaintegration – NSTI® von St
     title: 'Fussreflexzonen-Therapie',
     duration: '60 – 90 Min.',
     price: 120, // Base price
-    priceRange: '120 – 150',
+    priceRange: '120 / 60 Min.',
     isReflexology: true,
     description: 'Basis stärken.',
     longDescription: ` Die Fußreflexzonenmassage ist ein ganzheitlicher Therapieansatz, der auf Jahrtausende altem Wissen basiert. In den Füßen spiegelt sich der gesamte menschliche Körper wider, was bedeutet, dass jedes Organ und System im Fuß repräsentiert ist. Die gezielte Berührung der Füße hat eine starke Wirkung auf das vegetative Nervensystem und führt zu tiefer Entspannung und innerer Ruhe.   
