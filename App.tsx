@@ -266,7 +266,7 @@ Mit Präsenz und Ruhe begleite ich dich wertschätzend, herzlich und klar. Zusam
                       </li>
                       <li className="flex items-center gap-4 text-sm uppercase tracking-wide">
                         <span className="w-8 h-[1px] bg-[#174652]"></span> 
-                        2018 200h Yoga Ausbildung, Sanapurna Ayurveda & Yoga, Zürich
+                        2018 Yoga Ausbildung 200h, Sanapurna Ayurveda & Yoga, Zürich
                       </li>
                       <li className="flex items-center gap-4 text-sm uppercase tracking-wide">
                         <span className="w-8 h-[1px] bg-[#174652]"></span> 
