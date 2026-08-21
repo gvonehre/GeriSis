@@ -11,6 +11,7 @@ export const SERVICES: Service[] = [
     title: 'Neurosomatische Körperarbeit',
     duration: '60 – 120 Min.',
     price: 120,
+    priceRange: 'CHF 120 / 60 Min.',
     description: 'Körperbewusstsein aufbauen.',
     longDescription: `Aus Erfahrungen lernen wir und besonders die Erfahrungen aus unserer frühen Kindheit prägen uns für das gesamte Leben. Je nachdem, ob diese in Sicherheit oder Unsicherheit gemacht werden konnten, werden sie unterschiedlich im Körper abgespeichert und haben Auswirkungen auf unseren Körper, unsere Empfindungen und unser Erleben bis ins Erwachsenenalter. Das vegetative Nervensystem, welches grundlegende Lebensfunktionen unseres Körpers steuert, spielt hierbei eine entscheidende Rolle für unser körperliches und psychisches Wohlbefinden.
 
